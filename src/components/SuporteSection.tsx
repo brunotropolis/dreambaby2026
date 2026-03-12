@@ -1,0 +1,34 @@
+import SectionTag from './SectionTag';
+import alessandraImg from '@/assets/alessandra.jpg';
+
+const items = [
+  { ico: '📱', text: 'WhatsApp exclusivo para alunas' },
+  { ico: '🎙️', text: 'Aceita mensagens, áudios, vídeos e fotos' },
+  { ico: '📅', text: '30 dias de acompanhamento ativo' },
+  { ico: '🕐', text: 'Dias úteis, horário comercial' },
+];
+
+const SuporteSection = () => (
+  <section className="bg-warm py-24" id="suporte">
+    <div className="max-w-[1100px] mx-auto px-10 grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-20 items-center">
+      <div>
+        <SectionTag>Você não está sozinha</SectionTag>
+        <h2 className="font-display text-[42px] font-bold leading-[1.15] text-foreground mb-6 mt-5">30 dias de acompanhamento<br/>individual pelo WhatsApp</h2>
+        <p className="text-[17px] text-text-2 leading-[1.8] mb-5">O acompanhamento do Dream Baby é feito pela Alessandra, consultora de sono e amamentação treinada pela Dayane Dos Anjos. Individual, direto com você, para o seu bebê, na sua rotina.</p>
+        <p className="text-[17px] text-text-2 leading-[1.8]">Não é grupo, não é fórum. É Alessandra respondendo você pelo WhatsApp, com atenção real para o que está acontecendo na sua casa. Manda áudio, vídeo, foto. Ela entende.</p>
+        <div className="flex flex-col gap-3.5 mt-8">
+          {items.map((it) => (
+            <div key={it.text} className="flex items-center gap-3.5 p-4 px-5 bg-card rounded-[14px] text-[15px] font-semibold text-foreground">
+              <span className="text-xl flex-shrink-0">{it.ico}</span> {it.text}
+            </div>
+          ))}
+        </div>
+      </div>
+      <div className="rounded-[28px] overflow-hidden aspect-[3/4] bg-teal-light" style={{ boxShadow: '0 16px 64px rgba(30,45,53,0.12)' }}>
+        <img src={alessandraImg} alt="Alessandra - suporte WhatsApp" className="w-full h-full object-cover object-[center_top]" />
+      </div>
+    </div>
+  </section>
+);
+
+export default SuporteSection;
