@@ -23,11 +23,11 @@ const Index = () => (
     <DorSection />
 
     {/* Dor → Mitos */}
-    <WaveDivider topColor="hsl(33 75% 96%)" bottomColor="hsl(42 100% 99%)" variant="up" />
+    <WaveDivider topColor="hsl(33 75% 96%)" bottomColor="#1E7A86" variant="up" />
     <MitosSection />
 
     {/* Mitos → Método */}
-    <WaveDivider topColor="hsl(42 100% 99%)" bottomColor="#38B2C0" variant="down" />
+    <WaveDivider topColor="#1E7A86" bottomColor="#38B2C0" variant="down" />
     <MetodoSection />
     <WaveDivider topColor="#38B2C0" bottomColor="hsl(42 100% 99%)" variant="up" />
 
