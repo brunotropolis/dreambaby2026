@@ -1,5 +1,5 @@
 const CtaFinalSection = () => (
-  <section className="py-16 px-6 sm:px-10 relative overflow-hidden" style={{ background: 'linear-gradient(160deg, hsl(185 57% 39%) 0%, #1E6E7A 100%)' }}>
+  <section className="py-16 px-6 sm:px-10 md:text-center relative overflow-hidden" style={{ background: 'linear-gradient(160deg, hsl(185 57% 39%) 0%, #1E6E7A 100%)' }}>
     <div className="absolute inset-0 pointer-events-none opacity-[0.06]">
       <svg width="100%" height="100%" viewBox="0 0 1440 600" preserveAspectRatio="none">
         <ellipse cx="200" cy="150" rx="300" ry="150" fill="white"/>
