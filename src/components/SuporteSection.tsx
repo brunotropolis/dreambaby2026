@@ -9,8 +9,8 @@ const items = [
 ];
 
 const SuporteSection = () => (
-  <section className="bg-warm py-24" id="suporte">
-    <div className="max-w-[1100px] mx-auto px-10 grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-20 items-center">
+  <section className="bg-warm py-16" id="suporte">
+    <div className="max-w-[1100px] mx-auto px-6 sm:px-10 grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-14 items-center">
       <div>
         <SectionTag>Você não está sozinha</SectionTag>
         <h2 className="font-display text-[42px] font-bold leading-[1.15] text-foreground mb-6 mt-5">30 dias de acompanhamento<br/>individual pelo WhatsApp</h2>
