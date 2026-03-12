@@ -10,7 +10,7 @@ const CtaFinalSection = () => (
         <ellipse cx="1050" cy="410" rx="180" ry="130" fill="white"/>
       </svg>
     </div>
-    <h2 className="font-display text-[32px] sm:text-[50px] font-bold text-primary-foreground leading-[1.15] max-w-[740px] mb-6 relative z-[2]">
+    <h2 className="font-display text-[32px] sm:text-[50px] font-bold text-primary-foreground leading-[1.15] max-w-[740px] md:mx-auto mb-6 relative z-[2]">
       Seu bebê merece dormir bem. Você merece dormir bem.{' '}
       <em className="italic" style={{ color: 'rgba(255,255,255,0.75)' }}>E você não precisa escolher entre uma coisa e a outra.</em>
     </h2>
