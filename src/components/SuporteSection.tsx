@@ -13,9 +13,8 @@ const SuporteSection = () => (
       <div>
         <SectionTag>Você não está sozinha</SectionTag>
 
-        {/* Placeholder photo - replace with real photo later */}
-        <div className="rounded-2xl overflow-hidden aspect-video bg-teal-light flex items-center justify-center mt-5 mb-6" style={{ boxShadow: '0 8px 32px rgba(30,45,53,0.08)' }}>
-          <span className="text-primary font-body text-sm font-semibold opacity-60">Foto Day + Alessandra</span>
+        <div className="rounded-2xl overflow-hidden aspect-video mt-5 mb-6" style={{ boxShadow: '0 8px 32px rgba(30,45,53,0.08)' }}>
+          <img src={dayAlessandraImg} alt="Dayane e Alessandra - equipe de suporte" className="w-full h-full object-cover object-[center_30%]" />
         </div>
 
         <h2 className="font-display text-[32px] sm:text-[42px] font-bold leading-[1.15] text-foreground mb-6">30 dias de acompanhamento individual pelo WhatsApp</h2>
