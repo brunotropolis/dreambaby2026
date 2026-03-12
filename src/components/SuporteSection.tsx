@@ -1,5 +1,5 @@
 import SectionTag from './SectionTag';
-import alessandraImg from '@/assets/alessandra.jpg';
+import dayAlessandraImg from '@/assets/day-alessandra.jpg';
 
 const items = [
   { ico: '📱', text: 'WhatsApp exclusivo para alunas' },
@@ -13,9 +13,8 @@ const SuporteSection = () => (
       <div>
         <SectionTag>Você não está sozinha</SectionTag>
 
-        {/* Placeholder photo - replace with real photo later */}
-        <div className="rounded-2xl overflow-hidden aspect-video bg-teal-light flex items-center justify-center mt-5 mb-6" style={{ boxShadow: '0 8px 32px rgba(30,45,53,0.08)' }}>
-          <span className="text-primary font-body text-sm font-semibold opacity-60">Foto Day + Alessandra</span>
+        <div className="rounded-2xl overflow-hidden aspect-video mt-5 mb-6" style={{ boxShadow: '0 8px 32px rgba(30,45,53,0.08)' }}>
+          <img src={dayAlessandraImg} alt="Dayane e Alessandra - equipe de suporte" className="w-full h-full object-cover object-[center_30%]" />
         </div>
 
         <h2 className="font-display text-[32px] sm:text-[42px] font-bold leading-[1.15] text-foreground mb-6">30 dias de acompanhamento individual pelo WhatsApp</h2>
@@ -30,7 +29,7 @@ const SuporteSection = () => (
         </div>
       </div>
       <div className="rounded-[28px] overflow-hidden aspect-[3/4] bg-teal-light" style={{ boxShadow: '0 16px 64px rgba(30,45,53,0.12)' }}>
-        <img src={alessandraImg} alt="Alessandra - suporte WhatsApp" className="w-full h-full object-cover object-[center_top]" />
+        <img src={dayAlessandraImg} alt="Dayane e Alessandra - suporte WhatsApp" className="w-full h-full object-cover object-[center_top]" />
       </div>
     </div>
   </section>
