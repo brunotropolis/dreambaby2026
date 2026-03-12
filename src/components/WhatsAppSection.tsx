@@ -2,7 +2,7 @@ import SectionTag from './SectionTag';
 
 const WhatsAppSection = () => (
   <section className="py-14" style={{ background: 'linear-gradient(135deg, #2A1F3D 0%, #3D2A5C 100%)', borderTop: '1px solid rgba(56,178,192,0.12)' }}>
-    <div className="max-w-[660px] mx-auto px-6 sm:px-10">
+    <div className="max-w-[660px] mx-auto px-6 sm:px-10 md:text-center">
       <SectionTag style={{ color: '#C4A8FF', background: 'transparent' }}>
         <span className="w-[9px] h-[9px] rounded-full bg-primary flex-shrink-0" />
         Ainda com dúvidas?

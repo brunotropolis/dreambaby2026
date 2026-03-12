@@ -18,8 +18,8 @@ const FaqSection = () => {
   return (
     <section className="bg-warm py-16">
       <div className="max-w-[760px] mx-auto px-6 sm:px-10">
-        <SectionTag>Dúvidas frequentes</SectionTag>
-        <h2 className="font-display text-[32px] sm:text-[42px] font-bold text-foreground mb-10 mt-5">Perguntas Frequentes</h2>
+        <SectionTag className="md:justify-center">Dúvidas frequentes</SectionTag>
+        <h2 className="font-display text-[32px] sm:text-[42px] font-bold text-foreground mb-10 mt-5 md:text-center">Perguntas Frequentes</h2>
         <div className="flex flex-col">
           {faqs.map((faq, i) => {
             const isOpen = openIndex === i;

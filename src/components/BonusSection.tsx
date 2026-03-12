@@ -30,9 +30,11 @@ const bonuses = [
 const BonusSection = () => (
   <section className="bg-warm py-16">
     <div className="max-w-[1080px] mx-auto px-6 sm:px-10">
-      <SectionTag dotColor="#C96B7A">Incluído no seu acesso</SectionTag>
-      <h2 className="font-display text-[32px] sm:text-[42px] font-bold leading-[1.2] text-foreground mt-5">Você leva tudo isso junto</h2>
-      <p className="text-text-2 text-base max-w-[520px] mt-4 mb-10 leading-[1.6]">Além do método completo, você recebe três bônus que aceleram sua jornada (e que você vai usar muito).</p>
+      <div className="md:text-center">
+        <SectionTag dotColor="#C96B7A" className="md:justify-center">Incluído no seu acesso</SectionTag>
+        <h2 className="font-display text-[32px] sm:text-[42px] font-bold leading-[1.2] text-foreground mt-5">Você leva tudo isso junto</h2>
+        <p className="text-text-2 text-base max-w-[520px] md:mx-auto mt-4 mb-10 leading-[1.6]">Além do método completo, você recebe três bônus que aceleram sua jornada (e que você vai usar muito).</p>
+      </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
         {bonuses.map((b) => (
           <div key={b.badge} className="bg-card rounded-[20px] p-8 px-7 flex flex-col items-start gap-3 border-2 transition-all duration-200 hover:-translate-y-1" style={{ borderColor: b.borderColor, boxShadow: '0 4px 24px rgba(0,0,0,0.06)' }}>
