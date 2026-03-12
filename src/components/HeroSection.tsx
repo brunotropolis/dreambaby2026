@@ -20,7 +20,7 @@ const HeroSection = () => (
 
     <div className="max-w-[1140px] mx-auto px-6 sm:px-10 py-14 grid grid-cols-1 lg:grid-cols-[1fr_480px] gap-12 items-center relative z-[2] animate-float-up">
       <div>
-        <h1 className="font-display text-[38px] sm:text-[58px] font-black leading-[1.08] text-foreground mb-7">
+        <h1 className="font-display text-[34px] sm:text-[46px] lg:text-[52px] font-black leading-[1.08] text-foreground mb-7">
           Seu bebê vai dormir<br />
           <em className="text-primary italic">no berço.</em><br />
           Você vai dormir bem<br />
@@ -29,11 +29,10 @@ const HeroSection = () => (
         <p className="text-lg text-text-2 leading-[1.8] max-w-[480px] mb-10">
           Sem choro. Sem culpa. Sem método genérico que não respeita o seu filho. O Dream Baby já ajudou mais de 10 mil famílias a fazer essa transição em até 5 dias.
         </p>
-        <a href="#suporte" className="inline-flex items-center gap-2.5 bg-green-btn text-primary-foreground font-body text-sm font-bold tracking-[0.5px] px-9 py-[18px] rounded-full w-full justify-center transition-all duration-200 hover:bg-green-btn-hover hover:-translate-y-0.5" style={{ boxShadow: '0 8px 32px rgba(56,178,192,0.35)' }}>
+        <a href="#suporte" className="flex items-center justify-center gap-2.5 bg-green-btn text-primary-foreground font-body text-sm font-bold tracking-[0.5px] px-9 py-[18px] rounded-full w-full text-center transition-all duration-200 hover:bg-green-btn-hover hover:-translate-y-0.5" style={{ boxShadow: '0 8px 32px rgba(56,178,192,0.35)' }}>
           Quero que meu bebê durma no berço essa semana ☁️
         </a>
-        <p className="text-[12.5px] text-text-3 text-center mt-3.5 font-medium">Acesso imediato &nbsp;·&nbsp; Garantia de 7 dias</p>
-        <div className="flex gap-2.5 mt-7 flex-wrap">
+        <div className="flex flex-col sm:flex-row gap-2.5 mt-7 items-center sm:items-start">
           {[
             { ico: '🔒', label: 'Compra segura' },
             { ico: '⚡', label: 'Acesso imediato' },

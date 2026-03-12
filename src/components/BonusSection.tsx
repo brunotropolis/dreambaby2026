@@ -2,7 +2,7 @@ import SectionTag from './SectionTag';
 
 const bonuses = [
   {
-    badge: 'BÔNUS 1', featured: false, price: 'Valor: R$59',
+    badge: 'BÔNUS 1', price: 'Valor: R$59', borderColor: '#C96B7A',
     title: 'E-book Saltos de Desenvolvimento',
     desc: 'Entenda o que está acontecendo com o seu bebê em cada salto — e como isso afeta (ou não) o sono. Chega de achar que regrediu do nada.',
     icon: (
@@ -10,7 +10,7 @@ const bonuses = [
     ),
   },
   {
-    badge: 'BÔNUS 2', featured: true, price: 'Valor: R$59',
+    badge: 'BÔNUS 2', price: 'Valor: R$59', borderColor: '#38B2C0',
     title: 'E-book Atividades para Estimular Energia',
     desc: 'Como gastar a energia certa antes do sono, na hora certa, do jeito certo. Simples, prático, sem precisar de nada especial.',
     icon: (
@@ -18,7 +18,7 @@ const bonuses = [
     ),
   },
   {
-    badge: 'BÔNUS 3', featured: false, price: 'Valor: R$87',
+    badge: 'BÔNUS 3', price: 'Valor: R$87', borderColor: '#22A845',
     title: 'Mini Curso A Rotina do Bebê',
     desc: 'O método funciona muito melhor quando tem uma rotina por trás. Esse mini curso te mostra como montar a rotina ideal para o seu bebê, sem engessamento.',
     icon: (
@@ -35,18 +35,19 @@ const BonusSection = () => (
       <p className="text-text-2 text-base max-w-[520px] mt-4 mb-10 leading-[1.6]">Além do método completo, você recebe três bônus que aceleram sua jornada (e que você vai usar muito).</p>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
         {bonuses.map((b) => (
-          <div key={b.badge} className={`bg-card rounded-[20px] p-8 px-7 flex flex-col items-start gap-3 border-2 transition-all duration-200 hover:-translate-y-1 ${b.featured ? 'border-primary' : 'border-transparent'}`} style={{ boxShadow: '0 4px 24px rgba(0,0,0,0.06)' }}>
-            <span className={`text-[10px] font-bold tracking-[2px] uppercase px-3 py-1 rounded-[20px] ${b.featured ? 'bg-primary text-primary-foreground' : 'bg-teal-pale text-primary'}`}>{b.badge}</span>
+          <div key={b.badge} className="bg-card rounded-[20px] p-8 px-7 flex flex-col items-start gap-3 border-2 transition-all duration-200 hover:-translate-y-1" style={{ borderColor: b.borderColor, boxShadow: '0 4px 24px rgba(0,0,0,0.06)' }}>
+            <span className="text-[10px] font-bold tracking-[2px] uppercase px-3 py-1 rounded-[20px] bg-teal-pale text-primary">{b.badge}</span>
             <div className="my-1">{b.icon}</div>
-            <span className="text-xs font-semibold text-accent line-through opacity-80">{b.price}</span>
+            <span className="text-[15px] font-semibold text-accent line-through">{b.price}</span>
             <h3 className="font-display text-lg font-bold text-foreground leading-[1.3]">{b.title}</h3>
             <p className="text-sm text-text-2 leading-[1.6]">{b.desc}</p>
           </div>
         ))}
       </div>
-      <div className="bg-primary text-primary-foreground rounded-2xl p-5 px-7 flex justify-center items-center gap-3 flex-wrap text-center">
+      <div className="bg-primary text-primary-foreground rounded-2xl p-4 px-7 flex flex-col sm:flex-row items-center gap-1 sm:gap-3">
         <span className="text-sm opacity-85 font-semibold">Total em bônus:</span>
-        <span className="text-xl font-extrabold">R$205,00 <em className="not-italic text-sm font-medium opacity-85 ml-2">incluídos no seu acesso</em></span>
+        <span className="font-display text-2xl sm:text-3xl font-extrabold">R$205,00</span>
+        <span className="text-sm font-medium opacity-85">totalmente incluídos no seu acesso</span>
       </div>
     </div>
   </section>

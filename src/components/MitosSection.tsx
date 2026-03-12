@@ -79,14 +79,17 @@ const myths = [
 ];
 
 const MitosSection = () => (
-  <section className="bg-cream py-16">
+  <section className="py-16" style={{ background: '#1E7A86' }}>
     <div className="max-w-[1100px] mx-auto px-6 sm:px-10">
       <div className="max-w-[620px] mb-12">
-        <SectionTag>3 mitos sobre sono de bebê</SectionTag>
-        <h2 className="font-display text-[32px] sm:text-[42px] font-bold leading-[1.2] text-foreground mt-5">
+        <SectionTag style={{ background: 'rgba(255,255,255,0.15)', color: 'rgba(255,255,255,0.95)' }}>
+          <span className="w-[9px] h-[9px] rounded-full flex-shrink-0" style={{ background: 'rgba(255,255,255,0.8)' }} />
+          3 mitos sobre sono de bebê
+        </SectionTag>
+        <h2 className="font-display text-[32px] sm:text-[42px] font-bold leading-[1.2] text-primary-foreground mt-5">
           O que você ouviu que não é verdade
         </h2>
-        <p className="text-lg text-text-2 leading-[1.7] mt-4">Antes de falar sobre o método, a gente precisa derrubar três crenças que travam a maioria das mães.</p>
+        <p className="text-lg leading-[1.7] mt-4" style={{ color: 'rgba(255,255,255,0.75)' }}>Antes de falar sobre o método, a gente precisa derrubar três crenças que travam a maioria das mães.</p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {myths.map((m) => (

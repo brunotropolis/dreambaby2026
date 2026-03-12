@@ -5,7 +5,6 @@ const items = [
   { ico: '📱', text: 'WhatsApp exclusivo para alunas' },
   { ico: '🎙️', text: 'Aceita mensagens, áudios, vídeos e fotos' },
   { ico: '📅', text: '30 dias de acompanhamento ativo' },
-  { ico: '🕐', text: 'Dias úteis, horário comercial' },
 ];
 
 const SuporteSection = () => (
@@ -13,7 +12,13 @@ const SuporteSection = () => (
     <div className="max-w-[1100px] mx-auto px-6 sm:px-10 grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-14 items-center">
       <div>
         <SectionTag>Você não está sozinha</SectionTag>
-        <h2 className="font-display text-[32px] sm:text-[42px] font-bold leading-[1.15] text-foreground mb-6 mt-5">30 dias de acompanhamento individual pelo WhatsApp</h2>
+
+        {/* Placeholder photo - replace with real photo later */}
+        <div className="rounded-2xl overflow-hidden aspect-video bg-teal-light flex items-center justify-center mt-5 mb-6" style={{ boxShadow: '0 8px 32px rgba(30,45,53,0.08)' }}>
+          <span className="text-primary font-body text-sm font-semibold opacity-60">Foto Day + Alessandra</span>
+        </div>
+
+        <h2 className="font-display text-[32px] sm:text-[42px] font-bold leading-[1.15] text-foreground mb-6">30 dias de acompanhamento individual pelo WhatsApp</h2>
         <p className="text-[17px] text-text-2 leading-[1.8] mb-5">O acompanhamento do Dream Baby é feito pela Alessandra, consultora de sono e amamentação treinada pela Dayane Dos Anjos. Individual, direto com você, para o seu bebê, na sua rotina.</p>
         <p className="text-[17px] text-text-2 leading-[1.8]">Não é grupo, não é fórum. É Alessandra respondendo você pelo WhatsApp, com atenção real para o que está acontecendo na sua casa. Manda áudio, vídeo, foto. Ela entende.</p>
         <div className="flex flex-col gap-3.5 mt-8">

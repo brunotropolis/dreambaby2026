@@ -48,17 +48,17 @@ const OfertaSection = () => {
   return (
     <section className="py-16 relative overflow-hidden" id="oferta" style={{ background: 'hsl(197 30% 16%)' }}>
       <div className="absolute opacity-[0.04] font-script text-[200px] text-primary-foreground whitespace-nowrap pointer-events-none" style={{ top: '-60px', left: '-80px' }}>Sono</div>
-      <div className="max-w-[1100px] mx-auto px-6 sm:px-10 grid grid-cols-1 lg:grid-cols-[1fr_500px] gap-14 items-center relative z-[2]">
+      <div className="max-w-[1100px] mx-auto px-6 sm:px-10 grid grid-cols-1 lg:grid-cols-[1fr_500px] gap-8 lg:gap-14 items-center relative z-[2]">
         <div>
           <SectionTag style={{ background: 'rgba(255,255,255,0.15)', color: 'rgba(255,255,255,0.95)' }}>
             <span className="w-[9px] h-[9px] rounded-full flex-shrink-0" style={{ background: 'rgba(255,255,255,0.8)' }} />
             Investimento
           </SectionTag>
-          <h2 className="font-display text-[32px] sm:text-[46px] font-bold text-primary-foreground leading-[1.15] mb-6 mt-5">Quanto você pagaria para dormir bem essa noite?</h2>
+          <h2 className="font-display text-[32px] sm:text-[46px] font-bold text-primary-foreground leading-[1.15] mb-4 mt-5">Quanto você pagaria para dormir bem essa noite?</h2>
           <p className="text-[17px] leading-[1.8]" style={{ color: 'rgba(255,255,255,0.65)' }}>Uma consulta particular com especialista em sono infantil custa entre R$300 e R$800, por sessão, sem suporte contínuo.</p>
-          <p className="text-[15px] mt-5" style={{ color: 'rgba(255,255,255,0.8)' }}>O Dream Baby é acesso ao método completo, suporte por 30 dias e todos os bônus, por menos do que um jantar fora.</p>
+          <p className="text-[15px] mt-4" style={{ color: 'rgba(255,255,255,0.8)' }}>O Dream Baby é acesso ao método completo, suporte por 30 dias e todos os bônus, por menos do que um jantar fora.</p>
         </div>
-        <div className="bg-card rounded-[28px] p-10" style={{ boxShadow: '0 24px 80px rgba(0,0,0,0.3)' }}>
+        <div className="bg-card rounded-[28px] p-8 sm:p-10" style={{ boxShadow: '0 24px 80px rgba(0,0,0,0.3)' }}>
           <div className="flex flex-col gap-3 mb-7">
             {offerItems.map((item) => (
               <div key={item} className="flex gap-3 items-start text-[14.5px] text-foreground leading-[1.4] font-medium">
@@ -68,30 +68,30 @@ const OfertaSection = () => {
           </div>
 
           {/* Countdown */}
-          <div className="rounded-2xl p-5 px-6 text-center mb-5 relative overflow-hidden" style={{ background: 'linear-gradient(135deg, #C45200, #F06000)' }}>
-            <div className="font-display text-[22px] font-extrabold text-primary-foreground mb-2 relative">🏷️ 20% de desconto ativo</div>
+          <div className="rounded-2xl p-4 sm:p-5 px-4 sm:px-6 text-center mb-5 relative overflow-hidden" style={{ background: 'linear-gradient(135deg, #C45200, #F06000)' }}>
+            <div className="font-display text-[20px] sm:text-[22px] font-extrabold text-primary-foreground mb-2 relative">🏷️ 20% de desconto ativo</div>
             <div className="text-xs uppercase tracking-[1.5px] mb-3 relative" style={{ color: 'rgba(255,255,255,0.8)' }}>Oferta encerra em:</div>
-            <div className="flex justify-center items-center gap-2 mb-2.5 relative">
+            <div className="flex justify-center items-center gap-1 sm:gap-2 mb-2.5 relative">
               {[
                 { val: time.d, lbl: 'dias' },
                 { val: time.h, lbl: 'horas' },
                 { val: time.m, lbl: 'min' },
                 { val: time.s, lbl: 'seg' },
               ].map((box, i) => (
-                <div key={box.lbl} className="flex items-center gap-2">
-                  {i > 0 && <span className="text-[28px] font-extrabold mb-3" style={{ color: 'rgba(255,255,255,0.6)' }}>:</span>}
-                  <div className="rounded-[10px] px-4 py-2.5 min-w-[64px] backdrop-blur-[4px]" style={{ background: 'rgba(255,255,255,0.15)' }}>
-                    <span className="block text-[28px] font-extrabold text-primary-foreground leading-none font-display">{box.val}</span>
-                    <small className="block text-[10px] uppercase tracking-[1px] mt-[2px]" style={{ color: 'rgba(255,255,255,0.75)' }}>{box.lbl}</small>
+                <div key={box.lbl} className="flex items-center gap-1 sm:gap-2">
+                  {i > 0 && <span className="text-[20px] sm:text-[28px] font-extrabold mb-3" style={{ color: 'rgba(255,255,255,0.6)' }}>:</span>}
+                  <div className="rounded-[10px] px-2 sm:px-4 py-2 sm:py-2.5 min-w-[52px] sm:min-w-[64px] backdrop-blur-[4px]" style={{ background: 'rgba(255,255,255,0.15)' }}>
+                    <span className="block text-[22px] sm:text-[28px] font-extrabold text-primary-foreground leading-none font-display">{box.val}</span>
+                    <small className="block text-[9px] sm:text-[10px] uppercase tracking-[1px] mt-[2px]" style={{ color: 'rgba(255,255,255,0.75)' }}>{box.lbl}</small>
                   </div>
                 </div>
               ))}
             </div>
           </div>
 
-          <div className="h-px bg-border my-6" />
+          <div className="h-px bg-border my-5" />
           <div className="text-[13px] text-text-3 line-through text-center">De R$297,00</div>
-          <div className="font-display text-[54px] font-black text-primary text-center leading-none my-2">12x R$24,43</div>
+          <div className="font-display text-[36px] sm:text-[40px] font-black text-primary text-center leading-none my-2 tracking-wide">12x R$24,43</div>
           <div className="text-sm text-text-3 text-center mb-7 font-medium">ou R$237,60 à vista</div>
           <a
             href="https://payfast.greenn.com.br/120378/offer/Yo2LTy"
