@@ -1,5 +1,5 @@
 import SectionTag from './SectionTag';
-import alessandraImg from '@/assets/alessandra.jpg';
+import dayAlessandraImg from '@/assets/day-alessandra.jpg';
 
 const items = [
   { ico: '📱', text: 'WhatsApp exclusivo para alunas' },
