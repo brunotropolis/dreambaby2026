@@ -1,13 +1,13 @@
 import SectionTag from './SectionTag';
 
 const WhatsAppSection = () => (
-  <section className="py-16 text-center" style={{ background: 'linear-gradient(135deg, #2A1F3D 0%, #3D2A5C 100%)', borderTop: '1px solid rgba(56,178,192,0.12)' }}>
-    <div className="max-w-[660px] mx-auto px-10">
-      <SectionTag className="justify-center" style={{ color: '#C4A8FF', background: 'transparent' }}>
+  <section className="py-14" style={{ background: 'linear-gradient(135deg, #2A1F3D 0%, #3D2A5C 100%)', borderTop: '1px solid rgba(56,178,192,0.12)' }}>
+    <div className="max-w-[660px] mx-auto px-6 sm:px-10">
+      <SectionTag style={{ color: '#C4A8FF', background: 'transparent' }}>
         <span className="w-[9px] h-[9px] rounded-full bg-primary flex-shrink-0" />
         Ainda com dúvidas?
       </SectionTag>
-      <h2 className="font-display text-[30px] font-bold text-primary-foreground mb-3 mt-4">Fala com a nossa equipe antes de decidir</h2>
+      <h2 className="font-display text-[26px] sm:text-[30px] font-bold text-primary-foreground mb-3 mt-4">Fala com a nossa equipe antes de decidir</h2>
       <p className="text-base leading-[1.7]" style={{ color: 'rgba(255,255,255,0.75)' }}>Se você quiser entender melhor se o método é para o seu bebê, a equipe da Dayane está disponível para te atender pelo WhatsApp. Sem pressão, sem script de vendas.</p>
       <a
         href="https://api.whatsapp.com/send?phone=554184144810"

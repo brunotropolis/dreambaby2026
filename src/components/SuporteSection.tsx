@@ -13,7 +13,7 @@ const SuporteSection = () => (
     <div className="max-w-[1100px] mx-auto px-6 sm:px-10 grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-14 items-center">
       <div>
         <SectionTag>Você não está sozinha</SectionTag>
-        <h2 className="font-display text-[42px] font-bold leading-[1.15] text-foreground mb-6 mt-5">30 dias de acompanhamento<br/>individual pelo WhatsApp</h2>
+        <h2 className="font-display text-[32px] sm:text-[42px] font-bold leading-[1.15] text-foreground mb-6 mt-5">30 dias de acompanhamento individual pelo WhatsApp</h2>
         <p className="text-[17px] text-text-2 leading-[1.8] mb-5">O acompanhamento do Dream Baby é feito pela Alessandra, consultora de sono e amamentação treinada pela Dayane Dos Anjos. Individual, direto com você, para o seu bebê, na sua rotina.</p>
         <p className="text-[17px] text-text-2 leading-[1.8]">Não é grupo, não é fórum. É Alessandra respondendo você pelo WhatsApp, com atenção real para o que está acontecendo na sua casa. Manda áudio, vídeo, foto. Ela entende.</p>
         <div className="flex flex-col gap-3.5 mt-8">

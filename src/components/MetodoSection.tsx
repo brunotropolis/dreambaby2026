@@ -14,7 +14,7 @@ const MetodoSection = () => (
           <span className="w-[9px] h-[9px] rounded-full bg-primary flex-shrink-0" />
           Por que funciona quando outros falharam
         </div>
-        <h2 className="font-display text-[44px] font-bold text-primary-foreground leading-[1.15] mb-6">O que torna o Dream Baby diferente</h2>
+        <h2 className="font-display text-[32px] sm:text-[44px] font-bold text-primary-foreground leading-[1.15] mb-6">O que torna o Dream Baby diferente</h2>
         <p className="text-[17px] text-primary-foreground/80 leading-[1.8] mb-6">A maioria dos métodos tem dois problemas: ou exigem choro controlado que a mãe não consegue sustentar, ou são tão genéricos que deixam você perdida quando a teoria não acontece na prática.</p>
         <div className="bg-primary-foreground/[0.12] border-l-[3px] border-primary-foreground/60 p-5 px-6 rounded-r-2xl text-[17px] font-bold text-primary-foreground leading-[1.6] backdrop-blur-[10px]">
           O resultado: bebê no berço, com autonomia, em até 5 dias. Sem choro. Sem você se sentir péssima no processo.

@@ -54,7 +54,7 @@ const OfertaSection = () => {
             <span className="w-[9px] h-[9px] rounded-full flex-shrink-0" style={{ background: 'rgba(255,255,255,0.8)' }} />
             Investimento
           </SectionTag>
-          <h2 className="font-display text-[46px] font-bold text-primary-foreground leading-[1.15] mb-6 mt-5">Quanto você pagaria para dormir bem essa noite?</h2>
+          <h2 className="font-display text-[32px] sm:text-[46px] font-bold text-primary-foreground leading-[1.15] mb-6 mt-5">Quanto você pagaria para dormir bem essa noite?</h2>
           <p className="text-[17px] leading-[1.8]" style={{ color: 'rgba(255,255,255,0.65)' }}>Uma consulta particular com especialista em sono infantil custa entre R$300 e R$800, por sessão, sem suporte contínuo.</p>
           <p className="text-[15px] mt-5" style={{ color: 'rgba(255,255,255,0.8)' }}>O Dream Baby é acesso ao método completo, suporte por 30 dias e todos os bônus, por menos do que um jantar fora.</p>
         </div>

@@ -79,11 +79,11 @@ const myths = [
 ];
 
 const MitosSection = () => (
-  <section className="bg-cream py-24">
-    <div className="max-w-[1100px] mx-auto px-10">
-      <div className="text-center max-w-[620px] mx-auto mb-16">
-        <SectionTag className="justify-center">3 mitos sobre sono de bebê</SectionTag>
-        <h2 className="font-display text-[42px] font-bold leading-[1.2] text-foreground mt-5">
+  <section className="bg-cream py-16">
+    <div className="max-w-[1100px] mx-auto px-6 sm:px-10">
+      <div className="max-w-[620px] mb-12">
+        <SectionTag>3 mitos sobre sono de bebê</SectionTag>
+        <h2 className="font-display text-[32px] sm:text-[42px] font-bold leading-[1.2] text-foreground mt-5">
           O que você ouviu que não é verdade
         </h2>
         <p className="text-lg text-text-2 leading-[1.7] mt-4">Antes de falar sobre o método, a gente precisa derrubar três crenças que travam a maioria das mães.</p>

@@ -10,11 +10,11 @@ const CtaFinalSection = () => (
         <ellipse cx="1050" cy="410" rx="180" ry="130" fill="white"/>
       </svg>
     </div>
-    <h2 className="font-display text-[50px] font-bold text-primary-foreground leading-[1.15] max-w-[740px] mx-auto mb-6 relative z-[2]">
-      Seu bebê merece dormir bem.<br/>Você merece dormir bem.<br/>
+    <h2 className="font-display text-[32px] sm:text-[50px] font-bold text-primary-foreground leading-[1.15] max-w-[740px] mb-6 relative z-[2]">
+      Seu bebê merece dormir bem. Você merece dormir bem.{' '}
       <em className="italic" style={{ color: 'rgba(255,255,255,0.75)' }}>E você não precisa escolher entre uma coisa e a outra.</em>
     </h2>
-    <p className="text-lg max-w-[520px] mx-auto mb-12 leading-[1.8] relative z-[2]" style={{ color: 'rgba(255,255,255,0.82)' }}>
+    <p className="text-lg max-w-[520px] mb-10 leading-[1.8] relative z-[2]" style={{ color: 'rgba(255,255,255,0.82)' }}>
       O Dream Baby existe pra te dar o passo a passo, o suporte e a segurança que você precisa pra fazer essa transição com amor e sem culpa.
     </p>
     <a
