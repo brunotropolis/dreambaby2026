@@ -46,7 +46,7 @@ const OfertaSection = () => {
   ];
 
   return (
-    <section className="py-24 relative overflow-hidden" id="oferta" style={{ background: 'hsl(197 30% 16%)' }}>
+    <section className="py-16 relative overflow-hidden" id="oferta" style={{ background: 'hsl(197 30% 16%)' }}>
       <div className="absolute opacity-[0.04] font-script text-[200px] text-primary-foreground whitespace-nowrap pointer-events-none" style={{ top: '-60px', left: '-80px' }}>Sono</div>
       <div className="max-w-[1100px] mx-auto px-10 grid grid-cols-1 lg:grid-cols-[1fr_500px] gap-20 items-center relative z-[2]">
         <div>
