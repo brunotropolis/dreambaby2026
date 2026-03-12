@@ -5,7 +5,7 @@ const features = [
 ];
 
 const MetodoSection = () => (
-  <section className="bg-primary py-24 relative overflow-hidden">
+  <section className="bg-primary py-16 relative overflow-hidden">
     <div className="absolute -top-[120px] -right-[120px] w-[400px] h-[400px] rounded-full bg-primary-foreground/[0.06]" />
     <div className="absolute -bottom-20 -left-20 w-[300px] h-[300px] rounded-full bg-primary-foreground/[0.05]" />
     <div className="max-w-[1100px] mx-auto px-10 grid grid-cols-1 lg:grid-cols-2 gap-20 items-center relative z-[2]">
