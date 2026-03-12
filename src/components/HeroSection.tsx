@@ -1,4 +1,4 @@
-import heroImg from '@/assets/hero-baby.jpg';
+import heroImg from '@/assets/dayane-hero.jpg';
 
 const HeroSection = () => (
   <section className="min-h-screen relative overflow-hidden flex items-center" style={{ background: 'linear-gradient(160deg, hsl(185 60% 94%) 0%, hsl(185 40% 97%) 40%, hsl(33 75% 96%) 100%)' }}>
