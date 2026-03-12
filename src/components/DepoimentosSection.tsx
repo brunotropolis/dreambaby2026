@@ -12,7 +12,7 @@ const testimonials = [
 const DepoimentosSection = () => (
   <section className="bg-cream py-16">
     <div className="max-w-[1100px] mx-auto mb-10 px-6 sm:px-10 md:text-center">
-      <SectionTag>Resultados reais</SectionTag>
+      <SectionTag className="md:justify-center">Resultados reais</SectionTag>
       <h2 className="font-display text-[32px] sm:text-[42px] font-bold leading-[1.2] text-foreground mt-5">Mães que já passaram por isso</h2>
       <p className="text-base text-text-2 mt-3">Organizamos por situação. Encontre a sua.</p>
     </div>

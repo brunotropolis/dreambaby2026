@@ -81,7 +81,7 @@ const myths = [
 const MitosSection = () => (
   <section className="py-16" style={{ background: '#1E7A86' }}>
     <div className="max-w-[1100px] mx-auto px-6 sm:px-10">
-      <div className="max-w-[620px] mb-12">
+      <div className="max-w-[620px] md:mx-auto md:text-center mb-12">
         <SectionTag style={{ background: 'rgba(255,255,255,0.15)', color: 'rgba(255,255,255,0.95)' }}>
           <span className="w-[9px] h-[9px] rounded-full flex-shrink-0" style={{ background: 'rgba(255,255,255,0.8)' }} />
           3 mitos sobre sono de bebê

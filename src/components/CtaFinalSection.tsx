@@ -14,7 +14,7 @@ const CtaFinalSection = () => (
       Seu bebê merece dormir bem. Você merece dormir bem.{' '}
       <em className="italic" style={{ color: 'rgba(255,255,255,0.75)' }}>E você não precisa escolher entre uma coisa e a outra.</em>
     </h2>
-    <p className="text-lg max-w-[520px] mb-10 leading-[1.8] relative z-[2]" style={{ color: 'rgba(255,255,255,0.82)' }}>
+    <p className="text-lg max-w-[520px] md:mx-auto mb-10 leading-[1.8] relative z-[2]" style={{ color: 'rgba(255,255,255,0.82)' }}>
       O Dream Baby existe pra te dar o passo a passo, o suporte e a segurança que você precisa pra fazer essa transição com amor e sem culpa.
     </p>
     <a
