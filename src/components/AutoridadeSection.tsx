@@ -9,8 +9,8 @@ const stats = [
 ];
 
 const AutoridadeSection = () => (
-  <section className="bg-cream py-24">
-    <div className="max-w-[1100px] mx-auto px-10 grid grid-cols-1 lg:grid-cols-[420px_1fr] gap-20 items-center">
+  <section className="bg-cream py-16">
+    <div className="max-w-[1100px] mx-auto px-6 sm:px-10 grid grid-cols-1 lg:grid-cols-[420px_1fr] gap-14 items-center">
       <div className="relative">
         <div className="rounded-[32px] overflow-hidden aspect-[3/4] bg-teal-light">
           <img src={dayaneImg} alt="Dayane Dos Anjos" className="w-full h-full object-cover object-[center_top]" />
@@ -22,7 +22,7 @@ const AutoridadeSection = () => (
       </div>
       <div>
         <SectionTag dotColor="#C4A8FF">Quem vai te ensinar</SectionTag>
-        <h2 className="font-display text-[40px] font-bold leading-[1.15] text-foreground mb-2 mt-5">Dayane Dos Anjos</h2>
+        <h2 className="font-display text-[32px] sm:text-[40px] font-bold leading-[1.15] text-foreground mb-2 mt-5">Dayane Dos Anjos</h2>
         <div className="text-sm text-primary font-semibold tracking-[0.5px] mb-7">Consultora de sono, amamentação e cuidados com o bebê. Uma das maiores referências em maternidade do Brasil.</div>
         <p className="text-[17px] text-text-2 leading-[1.85] mb-5">Depois de orientar mais de 10 mil famílias, ela percebeu que cada bebê é único, mas que existem padrões de dificuldades com o sono. Foi assim que nasceram os perfis do Método Dream Baby.</p>
         <p className="text-[17px] text-text-2 leading-[1.85] mb-5">O objetivo da Dayane é mostrar que é possível, sim, ensinar o bebê a dormir bem e no berço com leveza, sem deixar chorando, respeitando o ritmo dele... e o da mãe também.</p>

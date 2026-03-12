@@ -10,13 +10,13 @@ const testimonials = [
 ];
 
 const DepoimentosSection = () => (
-  <section className="bg-cream py-24">
-    <div className="text-center max-w-[560px] mx-auto mb-14 px-10">
-      <SectionTag className="justify-center">Resultados reais</SectionTag>
-      <h2 className="font-display text-[42px] font-bold leading-[1.2] text-foreground mt-5">Mães que já passaram por isso</h2>
+  <section className="bg-cream py-16">
+    <div className="max-w-[1100px] mx-auto mb-10 px-6 sm:px-10">
+      <SectionTag>Resultados reais</SectionTag>
+      <h2 className="font-display text-[32px] sm:text-[42px] font-bold leading-[1.2] text-foreground mt-5">Mães que já passaram por isso</h2>
       <p className="text-base text-text-2 mt-3">Organizamos por situação. Encontre a sua.</p>
     </div>
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-5 max-w-[1100px] mx-auto px-10">
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-5 max-w-[1100px] mx-auto px-6 sm:px-10">
       {testimonials.map((t) => (
         <div key={t.initials} className="bg-card rounded-3xl p-7 border-[1.5px] border-primary/10">
           <div className="flex items-center gap-3 mb-[18px]">

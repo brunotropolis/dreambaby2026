@@ -46,15 +46,15 @@ const OfertaSection = () => {
   ];
 
   return (
-    <section className="py-24 relative overflow-hidden" id="oferta" style={{ background: 'hsl(197 30% 16%)' }}>
+    <section className="py-16 relative overflow-hidden" id="oferta" style={{ background: 'hsl(197 30% 16%)' }}>
       <div className="absolute opacity-[0.04] font-script text-[200px] text-primary-foreground whitespace-nowrap pointer-events-none" style={{ top: '-60px', left: '-80px' }}>Sono</div>
-      <div className="max-w-[1100px] mx-auto px-10 grid grid-cols-1 lg:grid-cols-[1fr_500px] gap-20 items-center relative z-[2]">
+      <div className="max-w-[1100px] mx-auto px-6 sm:px-10 grid grid-cols-1 lg:grid-cols-[1fr_500px] gap-14 items-center relative z-[2]">
         <div>
           <SectionTag style={{ background: 'rgba(255,255,255,0.15)', color: 'rgba(255,255,255,0.95)' }}>
             <span className="w-[9px] h-[9px] rounded-full flex-shrink-0" style={{ background: 'rgba(255,255,255,0.8)' }} />
             Investimento
           </SectionTag>
-          <h2 className="font-display text-[46px] font-bold text-primary-foreground leading-[1.15] mb-6 mt-5">Quanto você pagaria para dormir bem essa noite?</h2>
+          <h2 className="font-display text-[32px] sm:text-[46px] font-bold text-primary-foreground leading-[1.15] mb-6 mt-5">Quanto você pagaria para dormir bem essa noite?</h2>
           <p className="text-[17px] leading-[1.8]" style={{ color: 'rgba(255,255,255,0.65)' }}>Uma consulta particular com especialista em sono infantil custa entre R$300 e R$800, por sessão, sem suporte contínuo.</p>
           <p className="text-[15px] mt-5" style={{ color: 'rgba(255,255,255,0.8)' }}>O Dream Baby é acesso ao método completo, suporte por 30 dias e todos os bônus, por menos do que um jantar fora.</p>
         </div>

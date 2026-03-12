@@ -9,11 +9,11 @@ const painPoints = [
 ];
 
 const DorSection = () => (
-  <section className="bg-warm pt-20 relative">
-    <div className="max-w-[760px] mx-auto px-10 pb-20">
+  <section className="bg-warm pt-14 relative">
+    <div className="max-w-[760px] mx-auto px-6 sm:px-10 pb-14">
       <SectionTag>Você se identifica?</SectionTag>
-      <h2 className="font-display text-[42px] font-bold leading-[1.2] text-foreground mb-12">
-        Se isso parece o seu dia a dia,<br />você não está sozinha
+      <h2 className="font-display text-[32px] sm:text-[42px] font-bold leading-[1.2] text-foreground mb-10">
+        Se isso parece o seu dia a dia, você não está sozinha
       </h2>
       <div className="flex flex-col gap-3.5 mb-12">
         {painPoints.map((p, i) => (
