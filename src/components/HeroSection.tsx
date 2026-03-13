@@ -22,21 +22,29 @@ const HeroSection = () => (
 
       {/* Foto mobile — círculo acima da headline, só no mobile */}
       <div className="block lg:hidden w-full flex justify-center">
-        <div
-          className="mx-auto overflow-hidden"
-          style={{
-            width: '160px',
-            height: '160px',
-            borderRadius: '50%',
-            boxShadow: '0 12px 40px rgba(56,178,192,0.25), 0 0 0 6px rgba(56,178,192,0.1)',
-            flexShrink: 0,
-          }}
-        >
-          <img
-            src={heroImg}
-            alt="Dayane Dos Anjos"
-            style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 15%' }}
-          />
+        <div className="relative mx-auto" style={{ maxWidth: '260px', width: '100%' }}>
+          <div
+            className="overflow-hidden w-full"
+            style={{
+              aspectRatio: '3/4',
+              borderRadius: '40% 60% 55% 45% / 45% 40% 60% 55%',
+              boxShadow: '0 24px 80px rgba(56,178,192,0.2), 0 0 0 8px rgba(56,178,192,0.08)',
+            }}
+          >
+            <img
+              src={heroImg}
+              alt="Dayane Dos Anjos"
+              className="w-full h-full object-cover object-[center_15%]"
+            />
+          </div>
+          <div className="absolute bg-card rounded-[16px] px-[10px] py-[10px] flex items-center gap-2" style={{ bottom: '-12px', left: '-12px', boxShadow: '0 8px 40px rgba(30,45,53,0.12)' }}>
+            <span className="font-display text-[22px] font-bold text-primary leading-none">+10mil</span>
+            <span className="text-[10px] text-text-2 leading-[1.3] font-semibold">famílias<br/>ajudadas</span>
+          </div>
+          <div className="absolute bg-card rounded-[16px] px-[10px] py-[10px] flex items-center gap-2" style={{ top: '16px', right: '-12px', boxShadow: '0 8px 40px rgba(30,45,53,0.12)' }}>
+            <span className="font-display text-[22px] font-bold text-primary leading-none">5 dias</span>
+            <span className="text-[10px] text-text-2 leading-[1.3] font-semibold">resultado<br/>em média</span>
+          </div>
         </div>
       </div>
 
