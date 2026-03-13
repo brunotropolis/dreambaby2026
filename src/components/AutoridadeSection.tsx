@@ -23,7 +23,7 @@ const AutoridadeSection = () => (
       <div>
         <SectionTag dotColor="#C4A8FF">Quem vai te ensinar</SectionTag>
         <h2 className="font-display text-[32px] sm:text-[40px] font-bold leading-[1.15] text-foreground mb-2 mt-5">Dayane Dos Anjos</h2>
-        <div className="text-sm text-primary font-semibold tracking-[0.5px] mb-7">Consultora de sono, amamentação e cuidados com o bebê. Uma das maiores referências em maternidade do Brasil.</div>
+        <div className="text-[17px] text-primary font-semibold tracking-[0.3px] mb-7 leading-[1.7]">Consultora de sono, amamentação e cuidados com o bebê. Uma das maiores referências em maternidade do Brasil.</div>
         <p className="text-[17px] text-text-2 leading-[1.85] mb-5">Depois de orientar mais de 10 mil famílias, ela percebeu que cada bebê é único, mas que existem padrões de dificuldades com o sono. Foi assim que nasceram os perfis do Método Dream Baby.</p>
         <p className="text-[17px] text-text-2 leading-[1.85] mb-5">O objetivo da Dayane é mostrar que é possível, sim, ensinar o bebê a dormir bem e no berço com leveza, sem deixar chorando, respeitando o ritmo dele... e o da mãe também.</p>
         <p className="text-[17px] text-text-2 leading-[1.85]">Se hoje tudo parece difícil, saiba que existe um caminho mais tranquilo. E a equipe da Dayane está a um clique de distância, pronta pra te apoiar. ♥</p>
