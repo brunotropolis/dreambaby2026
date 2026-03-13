@@ -97,7 +97,7 @@ const MitosSection = () => (
             <div className="flex justify-center mb-4" style={{ filter: 'drop-shadow(0 4px 8px rgba(56,178,192,0.15))' }}>
               {m.baby}
             </div>
-            <div className="font-script text-[64px] font-bold text-teal-light leading-none mb-4 select-none">{m.num}</div>
+            <div className="font-script text-[64px] font-bold text-primary/30 leading-none mb-4 select-none">{m.num}</div>
             <div className="text-[10px] font-bold tracking-[2px] uppercase text-accent mb-3">Mito</div>
             <h3 className="font-display text-xl font-bold text-foreground mb-3.5 leading-[1.35] italic">{m.title}</h3>
             <p className="text-[15px] text-text-2 leading-[1.75]">{m.text}</p>
