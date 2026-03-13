@@ -18,7 +18,7 @@ const HeroSection = () => (
       </svg>
     </div>
 
-    <div className="max-w-[1140px] mx-auto px-6 sm:px-10 py-14 grid grid-cols-1 lg:grid-cols-[1fr_480px] gap-12 items-center relative z-[2] animate-float-up">
+    <div className="max-w-[1140px] mx-auto px-6 sm:px-10 pt-14 pb-8 sm:py-14 grid grid-cols-1 lg:grid-cols-[1fr_480px] gap-12 items-center relative z-[2] animate-float-up">
       <div>
         <h1 className="font-display text-[34px] sm:text-[46px] lg:text-[52px] font-black leading-[1.08] text-foreground mb-7">
           Seu bebê vai dormir<br />
