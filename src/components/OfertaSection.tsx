@@ -113,7 +113,13 @@ const OfertaSection = () => {
           >
             Quero que meu bebê durma no berço essa semana ☁️
           </a>
-          <p className="text-[11px] text-text-3 text-center mt-3 whitespace-nowrap">🔒 Compra segura · ⚡ Acesso imediato · ✅ Garantia de 7 dias</p>
+          <div className="flex items-center justify-center gap-2 sm:gap-3 mt-3 flex-wrap">
+            <span className="text-[11px] text-text-3">🔒 Compra segura</span>
+            <span className="text-text-3 text-[11px]">·</span>
+            <span className="text-[11px] text-text-3">⚡ Acesso imediato</span>
+            <span className="text-text-3 text-[11px]">·</span>
+            <span className="text-[11px] text-text-3">✅ Garantia de 7 dias</span>
+          </div>
         </div>
       </div>
     </section>
