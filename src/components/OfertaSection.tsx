@@ -62,9 +62,9 @@ const OfertaSection = () => {
           <p className="text-[15px] mt-4" style={{ color: 'rgba(255,255,255,0.8)' }}>O Dream Baby é acesso ao método completo, suporte por 30 dias e todos os bônus, por menos do que um jantar fora.</p>
         </div>
         <div className="bg-card rounded-[28px] p-8 sm:p-10" style={{ boxShadow: '0 24px 80px rgba(0,0,0,0.3)' }}>
-          <div className="flex flex-col gap-3 mb-4">
+          <div className="flex flex-col gap-2.5 mb-4">
             {offerItems.map((item) => (
-              <div key={item} className="flex gap-3 items-start text-[14.5px] text-foreground leading-[1.4] font-medium">
+              <div key={item} className="flex gap-3 items-start text-[14.5px] text-foreground leading-[1.4] font-medium rounded-[10px] p-[10px_14px]" style={{ background: 'rgba(56,178,192,0.07)', border: '1px solid rgba(56,178,192,0.15)' }}>
                 <span className="text-primary font-bold text-base flex-shrink-0 mt-[1px]">✓</span> {item}
               </div>
             ))}
