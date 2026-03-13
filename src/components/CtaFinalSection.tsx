@@ -21,12 +21,11 @@ const CtaFinalSection = () => (
       href="https://payfast.greenn.com.br/120378/offer/Yo2LTy"
       target="_blank"
       rel="noopener noreferrer"
-      className="inline-block bg-card text-teal-dark font-body text-sm font-bold tracking-[0.5px] px-[52px] py-5 rounded-full no-underline transition-all duration-200 hover:-translate-y-0.5 relative z-[2]"
-      style={{ boxShadow: '0 8px 40px rgba(0,0,0,0.2)' }}
+      className="inline-block text-primary-foreground font-body text-sm font-bold tracking-[0.5px] px-[52px] py-5 rounded-full no-underline transition-all duration-200 hover:-translate-y-0.5 hover:brightness-110 relative z-[2]"
+      style={{ background: '#22A845', boxShadow: '0 8px 32px rgba(34,168,69,0.4)' }}
     >
       Quero que meu bebê durma no berço essa semana ☁️
     </a>
-    <p className="text-[13px] mt-[18px] relative z-[2]" style={{ color: 'rgba(255,255,255,0.6)' }}>12x de R$24,43 &nbsp;·&nbsp; Acesso imediato &nbsp;·&nbsp; Garantia de 7 dias</p>
   </section>
 );
 
