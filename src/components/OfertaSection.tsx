@@ -40,9 +40,12 @@ const OfertaSection = () => {
     'Quiz de perfil de sono do bebê',
     '30 dias de suporte via WhatsApp',
     '1 ano de acesso ao conteúdo',
-    '🎁 E-book Saltos de Desenvolvimento (R$59)',
-    '🎁 E-book Atividades para Estimular Energia (R$59)',
-    '🎁 Mini Curso A Rotina do Bebê (R$87)',
+  ];
+
+  const bonusItems = [
+    { name: 'E-book Saltos de Desenvolvimento', price: 'R$59' },
+    { name: 'E-book Atividades para Estimular Energia', price: 'R$59' },
+    { name: 'Mini Curso A Rotina do Bebê', price: 'R$87' },
   ];
 
   return (
@@ -59,10 +62,18 @@ const OfertaSection = () => {
           <p className="text-[15px] mt-4" style={{ color: 'rgba(255,255,255,0.8)' }}>O Dream Baby é acesso ao método completo, suporte por 30 dias e todos os bônus, por menos do que um jantar fora.</p>
         </div>
         <div className="bg-card rounded-[28px] p-8 sm:p-10" style={{ boxShadow: '0 24px 80px rgba(0,0,0,0.3)' }}>
-          <div className="flex flex-col gap-3 mb-7">
+          <div className="flex flex-col gap-3 mb-4">
             {offerItems.map((item) => (
               <div key={item} className="flex gap-3 items-start text-[14.5px] text-foreground leading-[1.4] font-medium">
                 <span className="text-primary font-bold text-base flex-shrink-0 mt-[1px]">✓</span> {item}
+              </div>
+            ))}
+          </div>
+          <div className="flex flex-col gap-3 mb-7">
+            {bonusItems.map((b) => (
+              <div key={b.name} className="flex gap-3 items-start text-[14.5px] text-foreground leading-[1.4] font-medium">
+                <span className="text-primary font-bold text-base flex-shrink-0 mt-[1px]">✓</span>
+                <span>🎁 {b.name} <span className="line-through text-text-3">({b.price})</span></span>
               </div>
             ))}
           </div>
@@ -90,9 +101,9 @@ const OfertaSection = () => {
           </div>
 
           <div className="h-px bg-border my-5" />
-          <div className="text-[13px] text-text-3 line-through text-center">De R$297,00</div>
-          <div className="font-display text-[36px] sm:text-[40px] font-black text-primary text-center leading-none my-2 tracking-wide">12x R$24,43</div>
-          <div className="text-sm text-text-3 text-center mb-7 font-medium">ou R$237,60 à vista</div>
+          <div className="text-[15px] text-text-3 line-through text-center font-medium">De R$297,00</div>
+          <div className="font-display text-[40px] sm:text-[46px] font-black text-primary text-center leading-none my-3 tracking-wide">12x R$24,43</div>
+          <div className="text-[16px] text-foreground text-center mb-7 font-bold">ou <span className="text-primary">R$237,60</span> à vista</div>
           <a
             href="https://payfast.greenn.com.br/120378/offer/Yo2LTy"
             target="_blank"
@@ -102,7 +113,7 @@ const OfertaSection = () => {
           >
             Quero que meu bebê durma no berço essa semana ☁️
           </a>
-          <p className="text-[11.5px] text-text-3 text-center mt-4 font-medium">🔒 Pagamento seguro &nbsp;·&nbsp; Acesso imediato &nbsp;·&nbsp; Garantia 7 dias</p>
+          <p className="text-[11.5px] text-text-3 text-center mt-4 font-medium whitespace-nowrap">🔒 Pagamento seguro · Acesso imediato · Garantia 7 dias</p>
         </div>
       </div>
     </section>
