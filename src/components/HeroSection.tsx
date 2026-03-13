@@ -18,11 +18,11 @@ const HeroSection = () => (
       </svg>
     </div>
 
-    <div className="max-w-[1140px] mx-auto px-6 sm:px-10 pt-10 pb-6 sm:py-14 grid grid-cols-1 lg:grid-cols-[1fr_480px] gap-8 lg:gap-12 items-center relative z-[2] animate-float-up w-full">
+    <div className="max-w-[1140px] mx-auto px-6 sm:px-10 pt-10 pb-6 sm:py-14 grid grid-cols-1 lg:grid-cols-[1fr_480px] gap-4 lg:gap-12 items-center relative z-[2] animate-float-up w-full">
 
-      {/* Foto mobile — círculo acima da headline, só no mobile */}
-      <div className="block lg:hidden w-full flex justify-center">
-        <div className="relative mx-auto" style={{ maxWidth: '260px', width: '100%' }}>
+      {/* Foto mobile — acima da headline, só no mobile */}
+      <div className="block lg:hidden w-full flex justify-center mb-0">
+        <div className="relative mx-auto" style={{ maxWidth: '160px', width: '100%' }}>
           <div
             className="overflow-hidden w-full"
             style={{
@@ -37,13 +37,13 @@ const HeroSection = () => (
               className="w-full h-full object-cover object-[center_15%]"
             />
           </div>
-          <div className="absolute bg-card rounded-[16px] px-[10px] py-[10px] flex items-center gap-2" style={{ bottom: '-12px', left: '-12px', boxShadow: '0 8px 40px rgba(30,45,53,0.12)' }}>
-            <span className="font-display text-[22px] font-bold text-primary leading-none">+10mil</span>
-            <span className="text-[10px] text-text-2 leading-[1.3] font-semibold">famílias<br/>ajudadas</span>
+          <div className="absolute bg-card rounded-[12px] px-[10px] py-[7px] flex items-center gap-1.5" style={{ bottom: '-10px', left: '-10px', boxShadow: '0 8px 40px rgba(30,45,53,0.12)' }}>
+            <span className="font-display text-[14px] font-bold text-primary leading-none">+10mil</span>
+            <span className="text-[9px] text-text-2 leading-[1.3] font-semibold">famílias<br/>ajudadas</span>
           </div>
-          <div className="absolute bg-card rounded-[16px] px-[10px] py-[10px] flex items-center gap-2" style={{ top: '16px', right: '-12px', boxShadow: '0 8px 40px rgba(30,45,53,0.12)' }}>
-            <span className="font-display text-[22px] font-bold text-primary leading-none">5 dias</span>
-            <span className="text-[10px] text-text-2 leading-[1.3] font-semibold">resultado<br/>em média</span>
+          <div className="absolute bg-card rounded-[12px] px-[10px] py-[7px] flex items-center gap-1.5" style={{ top: '12px', right: '-10px', boxShadow: '0 8px 40px rgba(30,45,53,0.12)' }}>
+            <span className="font-display text-[14px] font-bold text-primary leading-none">5 dias</span>
+            <span className="text-[9px] text-text-2 leading-[1.3] font-semibold">resultado<br/>em média</span>
           </div>
         </div>
       </div>
