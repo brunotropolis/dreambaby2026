@@ -4,7 +4,7 @@ const bonuses = [
   {
     badge: 'BÔNUS 1', price: 'Valor: R$59', borderColor: '#C96B7A',
     title: 'E-book Saltos de Desenvolvimento',
-    desc: 'Entenda o que está acontecendo com o seu bebê em cada salto — e como isso afeta (ou não) o sono. Chega de achar que regrediu do nada.',
+    desc: 'Entenda o que está acontecendo com o seu bebê em cada salto e como isso afeta (ou não) o sono. Chega de achar que regrediu do nada.',
     icon: (
       <svg viewBox="0 0 80 80" width="60" height="60">
         <circle cx="40" cy="40" r="38" fill="#FFF0F3"/>
