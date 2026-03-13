@@ -1,5 +1,6 @@
 import HeroSection from '@/components/HeroSection';
 import WaveDivider from '@/components/WaveDivider';
+import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import DorSection from '@/components/DorSection';
 import MitosSection from '@/components/MitosSection';
 import MetodoSection from '@/components/MetodoSection';
