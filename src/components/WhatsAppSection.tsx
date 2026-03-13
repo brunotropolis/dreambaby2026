@@ -21,7 +21,7 @@ const WhatsAppSection = () => (
         </svg>
         Chamar no WhatsApp
       </a>
-      <p className="text-xs text-text-3 mt-3.5 font-medium">Atendimento em dias úteis, horário comercial.</p>
+      
     </div>
   </section>
 );

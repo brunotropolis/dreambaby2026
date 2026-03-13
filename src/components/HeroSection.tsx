@@ -1,7 +1,7 @@
 import heroImg from '@/assets/dayane-hero.jpg';
 
 const HeroSection = () => (
-  <section className="min-h-screen relative overflow-hidden flex items-center" style={{ background: 'linear-gradient(160deg, hsl(185 60% 94%) 0%, hsl(185 40% 97%) 40%, hsl(33 75% 96%) 100%)' }}>
+  <section className="min-h-screen relative overflow-hidden flex items-center pb-4 sm:pb-0" style={{ background: 'linear-gradient(160deg, hsl(185 60% 94%) 0%, hsl(185 40% 97%) 40%, hsl(33 75% 96%) 100%)' }}>
     {/* Cloud decorations */}
     <div className="absolute inset-0 pointer-events-none">
       <svg className="absolute opacity-[0.35]" style={{ top: '-40px', right: '-60px', width: '360px' }} viewBox="0 0 360 200" fill="none">

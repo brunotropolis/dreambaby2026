@@ -101,7 +101,7 @@ const BonusSection = () => (
       </div>
       <div className="bg-primary text-primary-foreground rounded-2xl p-4 px-7 flex flex-col sm:flex-row items-center gap-1 sm:gap-3">
         <span className="text-sm opacity-85 font-semibold">Total em bônus:</span>
-        <span className="font-display text-2xl sm:text-3xl font-extrabold">R$205,00</span>
+        <span className="font-display text-2xl sm:text-3xl font-extrabold line-through">R$205,00</span>
         <span className="text-sm font-medium opacity-85">totalmente incluídos no seu acesso</span>
       </div>
     </div>
