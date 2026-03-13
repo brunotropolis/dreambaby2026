@@ -1,7 +1,7 @@
 import heroImg from '@/assets/dayane-hero.jpg';
 
 const HeroSection = () => (
-  <section className="min-h-screen relative overflow-hidden flex items-center pb-0 sm:pb-0" style={{ background: 'linear-gradient(160deg, hsl(185 60% 94%) 0%, hsl(185 40% 97%) 40%, hsl(33 75% 96%) 100%)' }}>
+  <section className="relative overflow-hidden flex items-center" style={{ background: 'linear-gradient(160deg, hsl(185 60% 94%) 0%, hsl(185 40% 97%) 40%, hsl(33 75% 96%) 100%)' }}>
     {/* Cloud decorations */}
     <div className="absolute inset-0 pointer-events-none">
       <svg className="absolute opacity-[0.35]" style={{ top: '-40px', right: '-60px', width: '360px' }} viewBox="0 0 360 200" fill="none">
@@ -18,21 +18,42 @@ const HeroSection = () => (
       </svg>
     </div>
 
-    <div className="max-w-[1140px] mx-auto px-6 sm:px-10 pt-14 pb-8 sm:py-14 grid grid-cols-1 lg:grid-cols-[1fr_480px] gap-12 items-center relative z-[2] animate-float-up">
+    <div className="max-w-[1140px] mx-auto px-6 sm:px-10 pt-10 pb-6 sm:py-14 grid grid-cols-1 lg:grid-cols-[1fr_480px] gap-8 lg:gap-12 items-center relative z-[2] animate-float-up w-full">
+
+      {/* Foto mobile — círculo acima da headline, só no mobile */}
+      <div className="block lg:hidden w-full flex justify-center">
+        <div
+          className="mx-auto overflow-hidden"
+          style={{
+            width: '160px',
+            height: '160px',
+            borderRadius: '50%',
+            boxShadow: '0 12px 40px rgba(56,178,192,0.25), 0 0 0 6px rgba(56,178,192,0.1)',
+            flexShrink: 0,
+          }}
+        >
+          <img
+            src={heroImg}
+            alt="Dayane Dos Anjos"
+            style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 15%' }}
+          />
+        </div>
+      </div>
+
       <div>
-        <h1 className="font-display text-[34px] sm:text-[46px] lg:text-[52px] font-black leading-[1.08] text-foreground mb-7">
+        <h1 className="font-display text-[30px] sm:text-[46px] lg:text-[52px] font-black leading-[1.08] text-foreground mb-5 lg:mb-7">
           Seu bebê vai dormir<br />
           <em className="text-primary italic">no berço.</em><br />
           Você vai dormir bem<br />
           <span className="text-accent">à noite.</span>
         </h1>
-        <p className="text-lg text-text-2 leading-[1.8] max-w-[480px] mb-10">
+        <p className="text-lg text-text-2 leading-[1.8] max-w-[480px] mb-8 lg:mb-10">
           Sem choro. Sem culpa. Sem método genérico que não respeita o seu filho. O Dream Baby já ajudou mais de 10 mil famílias a fazer essa transição em até 5 dias.
         </p>
         <a href="#suporte" className="flex items-center justify-center gap-2.5 bg-green-btn text-primary-foreground font-body text-sm font-bold tracking-[0.5px] px-9 py-[18px] rounded-full w-full text-center transition-all duration-200 hover:bg-green-btn-hover hover:-translate-y-0.5" style={{ boxShadow: '0 8px 32px rgba(56,178,192,0.35)' }}>
           Quero que meu bebê durma no berço essa semana ☁️
         </a>
-        <div className="flex flex-row gap-1.5 sm:gap-2.5 mt-4 sm:mt-7 items-center sm:items-start mb-0 sm:mb-0">
+        <div className="flex flex-row gap-1.5 sm:gap-2.5 mt-4 sm:mt-7 items-center mb-0">
           {[
             { ico: '🔒', label: 'Compra segura' },
             { ico: '⚡', label: 'Acesso imediato' },
@@ -45,6 +66,7 @@ const HeroSection = () => (
         </div>
       </div>
 
+      {/* Foto desktop — coluna direita */}
       <div className="relative hidden lg:block">
         <div className="overflow-hidden aspect-[3/4] bg-teal-light" style={{ borderRadius: '40% 60% 55% 45% / 45% 40% 60% 55%', boxShadow: '0 24px 80px rgba(56,178,192,0.2), 0 0 0 8px rgba(56,178,192,0.08)' }}>
           <img src={heroImg} alt="Dayane Dos Anjos segurando um bebê" className="w-full h-full object-cover object-[center_20%]" />
@@ -58,6 +80,7 @@ const HeroSection = () => (
           <span className="text-[11.5px] text-text-2 leading-[1.4] font-semibold">resultado<br/>em média</span>
         </div>
       </div>
+
     </div>
   </section>
 );
