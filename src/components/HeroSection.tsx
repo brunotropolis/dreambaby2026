@@ -20,23 +20,33 @@ const HeroSection = () => (
 
     <div className="max-w-[1140px] mx-auto px-6 sm:px-10 pt-10 pb-6 sm:py-14 grid grid-cols-1 lg:grid-cols-[1fr_480px] gap-8 lg:gap-12 items-center relative z-[2] animate-float-up w-full">
 
-      {/* Foto mobile — círculo acima da headline, só no mobile */}
-      <div className="block lg:hidden w-full flex justify-center">
-        <div
-          className="mx-auto overflow-hidden"
-          style={{
-            width: '160px',
-            height: '160px',
-            borderRadius: '50%',
-            boxShadow: '0 12px 40px rgba(56,178,192,0.25), 0 0 0 6px rgba(56,178,192,0.1)',
-            flexShrink: 0,
-          }}
-        >
-          <img
-            src={heroImg}
-            alt="Dayane Dos Anjos"
-            style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 15%' }}
-          />
+      {/* Foto mobile — com badges, só no mobile */}
+      <div className="block lg:hidden w-full">
+        <div className="relative mx-auto" style={{ width: '220px', height: '200px' }}>
+          <div
+            className="overflow-hidden absolute left-1/2"
+            style={{
+              width: '170px',
+              height: '170px',
+              borderRadius: '50%',
+              transform: 'translateX(-50%)',
+              boxShadow: '0 12px 40px rgba(56,178,192,0.25), 0 0 0 6px rgba(56,178,192,0.1)',
+            }}
+          >
+            <img
+              src={heroImg}
+              alt="Dayane Dos Anjos"
+              style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 15%' }}
+            />
+          </div>
+          <div className="absolute bg-card rounded-[12px] px-2.5 py-2 flex items-center gap-1.5" style={{ bottom: '0px', left: '0px', boxShadow: '0 6px 24px rgba(30,45,53,0.12)' }}>
+            <span className="font-display text-[16px] font-bold text-primary leading-none">+10mil</span>
+            <span className="text-[9px] text-text-2 leading-[1.3] font-semibold">famílias<br/>ajudadas</span>
+          </div>
+          <div className="absolute bg-card rounded-[12px] px-2.5 py-2 flex items-center gap-1.5" style={{ top: '0px', right: '0px', boxShadow: '0 6px 24px rgba(30,45,53,0.12)' }}>
+            <span className="font-display text-[16px] font-bold text-primary leading-none">5 dias</span>
+            <span className="text-[9px] text-text-2 leading-[1.3] font-semibold">resultado<br/>em média</span>
+          </div>
         </div>
       </div>
 
@@ -53,14 +63,15 @@ const HeroSection = () => (
         <a href="#suporte" className="flex items-center justify-center gap-2.5 bg-green-btn text-primary-foreground font-body text-sm font-bold tracking-[0.5px] px-9 py-[18px] rounded-full w-full text-center transition-all duration-200 hover:bg-green-btn-hover hover:-translate-y-0.5" style={{ boxShadow: '0 8px 32px rgba(56,178,192,0.35)' }}>
           Quero que meu bebê durma no berço essa semana ☁️
         </a>
-        <div className="flex flex-row gap-1.5 sm:gap-2.5 mt-4 sm:mt-7 items-center mb-0">
+        <div className="flex flex-row justify-between gap-2 mt-4 sm:mt-7 mb-0">
           {[
             { ico: '🔒', label: 'Compra segura' },
             { ico: '⚡', label: 'Acesso imediato' },
             { ico: '✅', label: '7 dias de garantia' },
           ].map((c) => (
-            <div key={c.label} className="inline-flex items-center gap-1 sm:gap-1.5 bg-card border-[1.5px] border-primary/20 text-text-2 text-[10px] sm:text-xs font-semibold px-2 sm:px-3.5 py-1 sm:py-1.5 rounded-full">
-              <span className="text-primary">{c.ico}</span> {c.label}
+            <div key={c.label} className="flex-1 inline-flex items-center justify-center gap-1 bg-card border-[1.5px] border-primary/20 text-text-2 text-[10px] sm:text-xs font-semibold px-1.5 py-2 rounded-xl text-center">
+              <span>{c.ico}</span>
+              <span className="leading-tight">{c.label}</span>
             </div>
           ))}
         </div>
