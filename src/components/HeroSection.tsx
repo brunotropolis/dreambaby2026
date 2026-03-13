@@ -32,13 +32,13 @@ const HeroSection = () => (
         <a href="#suporte" className="flex items-center justify-center gap-2.5 bg-green-btn text-primary-foreground font-body text-sm font-bold tracking-[0.5px] px-9 py-[18px] rounded-full w-full text-center transition-all duration-200 hover:bg-green-btn-hover hover:-translate-y-0.5" style={{ boxShadow: '0 8px 32px rgba(56,178,192,0.35)' }}>
           Quero que meu bebê durma no berço essa semana ☁️
         </a>
-        <div className="flex flex-col sm:flex-row gap-2.5 mt-7 items-center sm:items-start">
+        <div className="flex flex-row gap-1.5 sm:gap-2.5 mt-4 sm:mt-7 items-center sm:items-start mb-0 sm:mb-0">
           {[
             { ico: '🔒', label: 'Compra segura' },
             { ico: '⚡', label: 'Acesso imediato' },
             { ico: '✅', label: '7 dias de garantia' },
           ].map((c) => (
-            <div key={c.label} className="inline-flex items-center gap-1.5 bg-card border-[1.5px] border-primary/20 text-text-2 text-xs font-semibold px-3.5 py-1.5 rounded-full">
+            <div key={c.label} className="inline-flex items-center gap-1 sm:gap-1.5 bg-card border-[1.5px] border-primary/20 text-text-2 text-[10px] sm:text-xs font-semibold px-2 sm:px-3.5 py-1 sm:py-1.5 rounded-full">
               <span className="text-primary">{c.ico}</span> {c.label}
             </div>
           ))}

@@ -6,7 +6,24 @@ const bonuses = [
     title: 'E-book Saltos de Desenvolvimento',
     desc: 'Entenda o que está acontecendo com o seu bebê em cada salto — e como isso afeta (ou não) o sono. Chega de achar que regrediu do nada.',
     icon: (
-      <svg viewBox="0 0 64 64" width="60" height="60"><circle cx="32" cy="32" r="30" fill="#FFF0F3"/><path d="M20 44 Q32 20 44 44" stroke="#C96B7A" strokeWidth="3" fill="none" strokeLinecap="round"/><circle cx="32" cy="22" r="6" fill="#C96B7A" opacity="0.7"/><path d="M24 38 L40 38" stroke="#C96B7A" strokeWidth="2" strokeLinecap="round"/><path d="M26 42 L38 42" stroke="#C96B7A" strokeWidth="2" strokeLinecap="round"/></svg>
+      <svg viewBox="0 0 80 80" width="60" height="60">
+        <circle cx="40" cy="40" r="38" fill="#FFF0F3"/>
+        {/* Open book */}
+        <path d="M20 55 L40 50 L60 55 L60 25 L40 20 L20 25Z" fill="#F5D6DC" stroke="#C96B7A" strokeWidth="1.5"/>
+        <line x1="40" y1="20" x2="40" y2="50" stroke="#C96B7A" strokeWidth="1.5"/>
+        <path d="M24 30 L36 27" stroke="#C96B7A" strokeWidth="1" opacity="0.5"/>
+        <path d="M24 35 L36 32" stroke="#C96B7A" strokeWidth="1" opacity="0.5"/>
+        <path d="M24 40 L36 37" stroke="#C96B7A" strokeWidth="1" opacity="0.5"/>
+        <path d="M44 27 L56 30" stroke="#C96B7A" strokeWidth="1" opacity="0.5"/>
+        <path d="M44 32 L56 35" stroke="#C96B7A" strokeWidth="1" opacity="0.5"/>
+        {/* Baby jumping */}
+        <circle cx="52" cy="14" r="6" fill="#FDDCB5"/>
+        <path d="M48 20 Q52 28 56 20" stroke="#C96B7A" strokeWidth="1.5" fill="none"/>
+        <path d="M49 13 Q51 12 52 13" stroke="#5B4037" strokeWidth="1" fill="none"/>
+        <path d="M53 13 Q54 12 55 13" stroke="#5B4037" strokeWidth="1" fill="none"/>
+        <path d="M50 16 Q52 18 54 16" stroke="#C97D5A" strokeWidth="1" fill="none"/>
+        <text x="46" y="10" fontSize="8" fill="#C96B7A" opacity="0.7">↑</text>
+      </svg>
     ),
   },
   {
@@ -14,7 +31,25 @@ const bonuses = [
     title: 'E-book Atividades para Estimular Energia',
     desc: 'Como gastar a energia certa antes do sono, na hora certa, do jeito certo. Simples, prático, sem precisar de nada especial.',
     icon: (
-      <svg viewBox="0 0 64 64" width="60" height="60"><circle cx="32" cy="32" r="30" fill="#E8F7F9"/><rect x="18" y="20" width="28" height="24" rx="4" fill="#38B2C0" opacity="0.3"/><rect x="22" y="24" width="8" height="8" rx="2" fill="#38B2C0"/><rect x="34" y="24" width="8" height="8" rx="2" fill="#38B2C0"/><rect x="22" y="36" width="20" height="3" rx="1.5" fill="#38B2C0" opacity="0.7"/><circle cx="42" cy="44" r="8" fill="#22A845"/><path d="M39 44 L41 46 L45 42" stroke="white" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round"/></svg>
+      <svg viewBox="0 0 80 80" width="60" height="60">
+        <circle cx="40" cy="40" r="38" fill="#E8F7F9"/>
+        {/* Baby playing */}
+        <circle cx="40" cy="30" r="10" fill="#FDDCB5"/>
+        <path d="M36 28 Q38 27 39 28" stroke="#5B4037" strokeWidth="1.2" fill="none"/>
+        <path d="M41 28 Q43 27 44 28" stroke="#5B4037" strokeWidth="1.2" fill="none"/>
+        <path d="M37 33 Q40 36 43 33" stroke="#C97D5A" strokeWidth="1.2" fill="none"/>
+        <circle cx="35" cy="32" r="3" fill="#F5A6A6" opacity="0.4"/>
+        <circle cx="45" cy="32" r="3" fill="#F5A6A6" opacity="0.4"/>
+        <path d="M32 22 Q34 16 40 17 Q46 16 48 22" stroke="#8B6343" strokeWidth="2" fill="none"/>
+        <ellipse cx="40" cy="50" rx="14" ry="10" fill="#A8DEDE" opacity="0.6"/>
+        {/* Arms up - playing */}
+        <path d="M30 42 Q26 34 24 30" stroke="#FDDCB5" strokeWidth="3" fill="none" strokeLinecap="round"/>
+        <path d="M50 42 Q54 34 56 30" stroke="#FDDCB5" strokeWidth="3" fill="none" strokeLinecap="round"/>
+        {/* Stars */}
+        <text x="18" y="28" fontSize="10" fill="#F6C90E">★</text>
+        <text x="58" y="26" fontSize="8" fill="#F6C90E">★</text>
+        <text x="24" y="18" fontSize="7" fill="#38B2C0">✦</text>
+      </svg>
     ),
   },
   {
@@ -22,7 +57,25 @@ const bonuses = [
     title: 'Mini Curso A Rotina do Bebê',
     desc: 'O método funciona muito melhor quando tem uma rotina por trás. Esse mini curso te mostra como montar a rotina ideal para o seu bebê, sem engessamento.',
     icon: (
-      <svg viewBox="0 0 64 64" width="60" height="60"><circle cx="32" cy="32" r="30" fill="#FFF8E7"/><circle cx="32" cy="26" r="10" fill="#F6C90E" opacity="0.4"/><path d="M24 38 Q32 28 40 38" stroke="#F6C90E" strokeWidth="2.5" fill="none" strokeLinecap="round"/><rect x="28" y="40" width="8" height="2" rx="1" fill="#F6C90E" opacity="0.7"/><path d="M22 18 Q32 10 42 18" stroke="#F6C90E" strokeWidth="2" fill="none" strokeLinecap="round"/></svg>
+      <svg viewBox="0 0 80 80" width="60" height="60">
+        <circle cx="40" cy="40" r="38" fill="#FFF8E7"/>
+        {/* Clock */}
+        <circle cx="34" cy="36" r="16" fill="white" stroke="#38B2C0" strokeWidth="2"/>
+        <line x1="34" y1="36" x2="34" y2="26" stroke="#38B2C0" strokeWidth="2" strokeLinecap="round"/>
+        <line x1="34" y1="36" x2="42" y2="36" stroke="#38B2C0" strokeWidth="2" strokeLinecap="round"/>
+        <circle cx="34" cy="36" r="2" fill="#38B2C0"/>
+        {/* Sleeping baby */}
+        <circle cx="56" cy="50" r="8" fill="#FDDCB5"/>
+        <path d="M53 49 Q55 48 56 49" stroke="#5B4037" strokeWidth="1" fill="none"/>
+        <path d="M57 49 Q58 48 59 49" stroke="#5B4037" strokeWidth="1" fill="none"/>
+        <path d="M54 52 Q56 53 58 52" stroke="#C97D5A" strokeWidth="1" fill="none"/>
+        <path d="M52 44 Q54 40 56 42 Q58 40 60 44" stroke="#8B6343" strokeWidth="1.5" fill="none"/>
+        {/* Moon */}
+        <path d="M60 18 Q68 20 66 28 Q58 26 60 18Z" fill="#F6C90E" opacity="0.8"/>
+        {/* Zzz */}
+        <text x="62" y="40" fontSize="8" fill="#38B2C0" fontWeight="bold" opacity="0.6">z</text>
+        <text x="66" y="34" fontSize="10" fill="#38B2C0" fontWeight="bold" opacity="0.4">z</text>
+      </svg>
     ),
   },
 ];

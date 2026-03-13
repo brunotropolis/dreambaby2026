@@ -10,7 +10,7 @@ const MetodoSection = () => (
     <div className="absolute -bottom-20 -left-20 w-[300px] h-[300px] rounded-full bg-primary-foreground/[0.05]" />
     <div className="max-w-[1100px] mx-auto px-6 sm:px-10 grid grid-cols-1 lg:grid-cols-2 gap-14 items-center relative z-[2]">
       <div>
-        <div className="inline-flex items-center gap-2 text-[13px] font-extrabold tracking-[2.5px] uppercase bg-card text-primary px-4 py-[7px] pl-3 rounded-full mb-5">
+        <div className="inline-flex items-center gap-2 text-[13px] font-extrabold tracking-[2.5px] uppercase bg-card text-primary px-4 py-[7px] pl-3 rounded-full mb-5 leading-[1.3] sm:leading-normal">
           <span className="w-[9px] h-[9px] rounded-full bg-primary flex-shrink-0" />
           Por que funciona quando outros falharam
         </div>

@@ -94,7 +94,7 @@ const MitosSection = () => (
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {myths.map((m) => (
           <div key={m.num} className="bg-card rounded-[28px] p-9 px-8 border-[1.5px] border-primary/[0.12] relative overflow-hidden before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-1 before:bg-gradient-to-r before:from-primary before:to-accent">
-            <div className="flex justify-center mb-4" style={{ filter: 'drop-shadow(0 4px 8px rgba(56,178,192,0.15))' }}>
+            <div className="flex justify-center mb-4" style={{ filter: 'drop-shadow(0 4px 8px rgba(56,178,192,0.15)) saturate(1.3) contrast(1.15)' }}>
               {m.baby}
             </div>
             <div className="font-script text-[64px] font-bold text-primary/30 leading-none mb-4 select-none">{m.num}</div>
