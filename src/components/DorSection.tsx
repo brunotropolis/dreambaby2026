@@ -12,7 +12,7 @@ const DorSection = () => (
   <section className="bg-warm pt-14 relative">
     <div className="max-w-[760px] mx-auto px-6 sm:px-10 pb-14">
       <SectionTag>Você se identifica?</SectionTag>
-      <h2 className="font-display text-[32px] sm:text-[42px] font-bold leading-[1.2] text-foreground mb-10">
+      <h2 className="font-display text-[32px] sm:text-[42px] font-bold leading-[1.2] text-foreground mb-10 mt-5 sm:mt-3">
         Se isso parece o seu dia a dia, você não está sozinha
       </h2>
       <div className="flex flex-col gap-3.5 mb-12">
