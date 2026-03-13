@@ -69,9 +69,9 @@ const OfertaSection = () => {
               </div>
             ))}
           </div>
-          <div className="flex flex-col gap-3 mb-7">
+          <div className="flex flex-col gap-2.5 mb-7">
             {bonusItems.map((b) => (
-              <div key={b.name} className="flex gap-3 items-start text-[14.5px] text-foreground leading-[1.4] font-medium">
+              <div key={b.name} className="flex gap-3 items-start text-[14.5px] text-foreground leading-[1.4] font-medium rounded-[10px] p-[10px_14px]" style={{ background: 'rgba(56,178,192,0.07)', border: '1px solid rgba(56,178,192,0.15)' }}>
                 <span className="text-primary font-bold text-base flex-shrink-0 mt-[1px]">✓</span>
                 <span>🎁 {b.name} <span className="line-through text-text-3">({b.price})</span></span>
               </div>

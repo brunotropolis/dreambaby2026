@@ -10,7 +10,7 @@ const WhatsAppSection = () => (
       <h2 className="font-display text-[26px] sm:text-[30px] font-bold text-primary-foreground mb-3 mt-4">Fala com a nossa equipe antes de decidir</h2>
       <p className="text-base leading-[1.7]" style={{ color: 'rgba(255,255,255,0.75)' }}>Se você quiser entender melhor se o método é para o seu bebê, a equipe da Dayane está disponível para te atender pelo WhatsApp. Sem pressão, sem script de vendas.</p>
       <a
-        href="https://api.whatsapp.com/send?phone=554184144810"
+        href="https://api.whatsapp.com/send?phone=554184144810&text=Oi,%20eu%20estava%20no%20site%20do%20M%C3%A9todo%20de%20Sono%20Dream%20Baby%20e%20quero%20tirar%20uma%20d%C3%BAvida!"
         target="_blank"
         rel="noopener noreferrer"
         className="inline-flex items-center gap-2.5 text-primary-foreground font-body text-[15px] font-bold px-9 py-4 rounded-full no-underline transition-all duration-200 mt-6 hover:-translate-y-0.5"

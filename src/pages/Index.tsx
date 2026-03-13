@@ -65,6 +65,7 @@ const Index = () => (
     <FaqSection />
 
     <FooterSection />
+    <FloatingWhatsApp />
   </>
 );
 
