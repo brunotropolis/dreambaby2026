@@ -4,7 +4,7 @@ const bonuses = [
   {
     badge: 'BÔNUS 1', price: 'Valor: R$59', borderColor: '#C96B7A',
     title: 'E-book Saltos de Desenvolvimento',
-    desc: 'Entenda o que está acontecendo com o seu bebê em cada salto — e como isso afeta (ou não) o sono. Chega de achar que regrediu do nada.',
+    desc: 'Entenda o que está acontecendo com o seu bebê em cada salto e como isso afeta (ou não) o sono. Chega de achar que regrediu do nada.',
     icon: (
       <svg viewBox="0 0 80 80" width="60" height="60">
         <circle cx="40" cy="40" r="38" fill="#FFF0F3"/>
@@ -101,7 +101,7 @@ const BonusSection = () => (
       </div>
       <div className="bg-primary text-primary-foreground rounded-2xl p-4 px-7 flex flex-col sm:flex-row items-center gap-1 sm:gap-3">
         <span className="text-sm opacity-85 font-semibold">Total em bônus:</span>
-        <span className="font-display text-2xl sm:text-3xl font-extrabold">R$205,00</span>
+        <span className="font-display text-2xl sm:text-3xl font-extrabold line-through">R$205,00</span>
         <span className="text-sm font-medium opacity-85">totalmente incluídos no seu acesso</span>
       </div>
     </div>

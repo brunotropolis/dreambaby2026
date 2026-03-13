@@ -4,7 +4,7 @@ const painPoints = [
   'Seu bebê só dorme no colo, no peito ou sendo ninado por horas.',
   'Você tenta colocar no berço e ele acorda em segundos, chorando.',
   'À noite, acorda 3, 4, 5 vezes... e você não dorme mais direito há meses.',
-  'Você já tentou "deixar chorar" e não conseguiu sustentar — nem emocionalmente nem fisicamente.',
+  'Você já tentou "deixar chorar" e não conseguiu sustentar. Nem emocionalmente nem fisicamente.',
   'Cada vez que pesquisa sobre sono de bebê, lê uma coisa diferente e fica mais perdida.',
 ];
 

@@ -108,12 +108,11 @@ const OfertaSection = () => {
             href="https://payfast.greenn.com.br/120378/offer/Yo2LTy"
             target="_blank"
             rel="noopener noreferrer"
-            className="block bg-green-btn text-primary-foreground font-body text-[13px] font-bold tracking-[0.5px] px-6 py-[18px] rounded-full text-center no-underline transition-all duration-200 btn-pulse"
-            style={{ boxShadow: '0 8px 32px rgba(56,178,192,0.4)' }}
+            className="block text-primary-foreground font-body text-[13px] font-bold tracking-[0.5px] px-6 py-[18px] rounded-full text-center no-underline transition-all duration-200 btn-pulse"
+            style={{ background: '#22A845', boxShadow: '0 8px 32px rgba(34,168,69,0.4)' }}
           >
             Quero que meu bebê durma no berço essa semana ☁️
           </a>
-          <p className="text-[11.5px] text-text-3 text-center mt-4 font-medium whitespace-nowrap">🔒 Pagamento seguro · Acesso imediato · Garantia 7 dias</p>
         </div>
       </div>
     </section>
