@@ -35,6 +35,7 @@ const HeroSection = () => (
             src={heroImg}
             alt="Dayane Dos Anjos"
             className="w-full h-full object-cover object-[center_15%]"
+            fetchPriority="high"
           />
         </div>
       </div>
@@ -68,7 +69,7 @@ const HeroSection = () => (
       {/* Foto desktop — coluna direita */}
       <div className="relative hidden lg:block">
         <div className="overflow-hidden aspect-[3/4] bg-teal-light" style={{ borderRadius: '40% 60% 55% 45% / 45% 40% 60% 55%', boxShadow: '0 24px 80px rgba(56,178,192,0.2), 0 0 0 8px rgba(56,178,192,0.08)' }}>
-          <img src={heroImg} alt="Dayane Dos Anjos segurando um bebê" className="w-full h-full object-cover object-[center_20%]" />
+          <img src={heroImg} alt="Dayane Dos Anjos segurando um bebê" className="w-full h-full object-cover object-[center_20%]" fetchPriority="high" />
         </div>
         <div className="absolute bottom-8 -left-8 bg-card rounded-[20px] px-5 py-3.5 flex items-center gap-3" style={{ boxShadow: '0 8px 40px rgba(30,45,53,0.12)' }}>
           <span className="font-display text-[28px] font-bold text-primary leading-none">+10mil</span>

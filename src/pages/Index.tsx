@@ -1,22 +1,24 @@
+import { lazy, Suspense } from 'react';
 import HeroSection from '@/components/HeroSection';
 import WaveDivider from '@/components/WaveDivider';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
-import DorSection from '@/components/DorSection';
-import MitosSection from '@/components/MitosSection';
-import MetodoSection from '@/components/MetodoSection';
-import AutoridadeSection from '@/components/AutoridadeSection';
-import SuporteSection from '@/components/SuporteSection';
-import DepoimentosSection from '@/components/DepoimentosSection';
-import BonusSection from '@/components/BonusSection';
-import OfertaSection from '@/components/OfertaSection';
-import GarantiaSection from '@/components/GarantiaSection';
-import WhatsAppSection from '@/components/WhatsAppSection';
-import CtaFinalSection from '@/components/CtaFinalSection';
-import FaqSection from '@/components/FaqSection';
-import FooterSection from '@/components/FooterSection';
+
+const DorSection = lazy(() => import('@/components/DorSection'));
+const MitosSection = lazy(() => import('@/components/MitosSection'));
+const MetodoSection = lazy(() => import('@/components/MetodoSection'));
+const AutoridadeSection = lazy(() => import('@/components/AutoridadeSection'));
+const SuporteSection = lazy(() => import('@/components/SuporteSection'));
+const DepoimentosSection = lazy(() => import('@/components/DepoimentosSection'));
+const BonusSection = lazy(() => import('@/components/BonusSection'));
+const OfertaSection = lazy(() => import('@/components/OfertaSection'));
+const GarantiaSection = lazy(() => import('@/components/GarantiaSection'));
+const WhatsAppSection = lazy(() => import('@/components/WhatsAppSection'));
+const CtaFinalSection = lazy(() => import('@/components/CtaFinalSection'));
+const FaqSection = lazy(() => import('@/components/FaqSection'));
+const FooterSection = lazy(() => import('@/components/FooterSection'));
 
 const Index = () => (
-  <>
+  <Suspense fallback={null}>
     <HeroSection />
 
     {/* Hero → Dor */}
@@ -66,7 +68,7 @@ const Index = () => (
 
     <FooterSection />
     <FloatingWhatsApp />
-  </>
+  </Suspense>
 );
 
 export default Index;
