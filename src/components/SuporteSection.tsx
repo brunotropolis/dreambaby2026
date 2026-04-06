@@ -31,7 +31,7 @@ const SuporteSection = () => (
       </div>
       {/* Photo: visible only on desktop, sidebar */}
       <div className="hidden lg:block rounded-[28px] overflow-hidden aspect-[3/4] bg-teal-light" style={{ boxShadow: '0 16px 64px rgba(30,45,53,0.12)' }}>
-        <img src={dayAlessandraImg} alt="Dayane e Alessandra - suporte WhatsApp" className="w-full h-full object-cover object-[center_top]" />
+        <img src={dayAlessandraImg} alt="Dayane e Alessandra - suporte WhatsApp" className="w-full h-full object-cover object-[center_top]" loading="lazy" decoding="async" />
       </div>
     </div>
   </section>

@@ -13,7 +13,7 @@ const AutoridadeSection = () => (
     <div className="max-w-[1100px] mx-auto px-6 sm:px-10 grid grid-cols-1 lg:grid-cols-[420px_1fr] gap-14 items-center">
       <div className="relative">
         <div className="rounded-[32px] overflow-hidden aspect-[3/4] bg-teal-light">
-          <img src={dayaneImg} alt="Dayane Dos Anjos" className="w-full h-full object-cover object-[center_top]" />
+          <img src={dayaneImg} alt="Dayane Dos Anjos" className="w-full h-full object-cover object-[center_top]" loading="lazy" decoding="async" />
         </div>
         <div className="absolute -bottom-5 -right-5 bg-card rounded-[20px] p-4 px-[22px] text-center border-2 border-teal-light" style={{ boxShadow: '0 8px 40px rgba(30,45,53,0.12)' }}>
           <div className="font-display text-[26px] font-bold text-primary leading-none">+10k</div>
