@@ -35,6 +35,7 @@ const HeroSection = () => (
             src={heroImg}
             alt="Dayane Dos Anjos"
             className="w-full h-full object-cover object-[center_15%]"
+            fetchPriority="high"
           />
         </div>
       </div>
