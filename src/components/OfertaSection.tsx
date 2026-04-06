@@ -105,7 +105,7 @@ const OfertaSection = () => {
           <div className="font-display text-[40px] sm:text-[46px] font-black text-primary text-center leading-none my-3 tracking-wide">12x R$24,43</div>
           <div className="text-[16px] text-foreground text-center mb-7 font-bold">ou <span className="text-primary">R$237,60</span> à vista</div>
           <a
-            href="https://payfast.greenn.com.br/120378/offer/Yo2LTy"
+            href="https://payfast.greenn.com.br/120378/offer/Yo2LTy?cupom=20OFFESPECIAL&ch_id=21567&b_id_1=119627&b_offer_1=UNkLyv&b_id_2=119672&b_offer_2=qALA8Y"
             target="_blank"
             rel="noopener noreferrer"
             className="block text-primary-foreground font-body text-[13px] font-bold tracking-[0.5px] px-6 py-[18px] rounded-full text-center no-underline transition-all duration-200 btn-pulse"

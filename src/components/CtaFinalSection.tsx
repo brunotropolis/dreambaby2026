@@ -18,7 +18,7 @@ const CtaFinalSection = () => (
       O Dream Baby existe pra te dar o passo a passo, o suporte e a segurança que você precisa pra fazer essa transição com amor e sem culpa.
     </p>
     <a
-      href="https://payfast.greenn.com.br/120378/offer/Yo2LTy"
+      href="https://payfast.greenn.com.br/120378/offer/Yo2LTy?cupom=20OFFESPECIAL&ch_id=21567&b_id_1=119627&b_offer_1=UNkLyv&b_id_2=119672&b_offer_2=qALA8Y"
       target="_blank"
       rel="noopener noreferrer"
       className="inline-block text-primary-foreground font-body text-sm font-bold tracking-[0.5px] px-[52px] py-5 rounded-full no-underline transition-all duration-200 hover:-translate-y-0.5 hover:brightness-110 relative z-[2]"
