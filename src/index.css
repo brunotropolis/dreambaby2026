@@ -6,34 +6,24 @@
   :root {
     --background: 42 100% 99%;
     --foreground: 197 30% 16%;
-
     --card: 0 0% 100%;
     --card-foreground: 197 30% 16%;
-
     --popover: 0 0% 100%;
     --popover-foreground: 197 30% 16%;
-
     --primary: 185 55% 49%;
     --primary-foreground: 0 0% 100%;
-
     --secondary: 37 75% 96%;
     --secondary-foreground: 197 30% 16%;
-
     --muted: 185 40% 95%;
     --muted-foreground: 197 23% 55%;
-
     --accent: 347 40% 60%;
     --accent-foreground: 0 0% 100%;
-
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
-
     --border: 185 30% 88%;
     --input: 185 30% 88%;
     --ring: 185 55% 49%;
-
     --radius: 0.5rem;
-
     /* Custom tokens */
     --teal: 185 55% 49%;
     --teal-dark: 185 57% 39%;
@@ -80,16 +70,19 @@
   }
 }
 
-/* Pulse buy animation */
+/* Pulse buy animation — usa apenas transform+opacity (GPU-composited, sem box-shadow animation) */
 @keyframes pulse-buy {
-  0% { box-shadow: 0 0 0 0 rgba(34,168,69,0.6), 0 8px 32px rgba(34,168,69,0.4); }
-  50% { box-shadow: 0 0 0 14px rgba(34,168,69,0), 0 12px 40px rgba(34,168,69,0.45); transform: translateY(-2px) scale(1.01); }
-  100% { box-shadow: 0 0 0 0 rgba(34,168,69,0), 0 8px 32px rgba(34,168,69,0.4); }
+  0%   { transform: translateY(0) scale(1);      opacity: 1; }
+  50%  { transform: translateY(-2px) scale(1.01); opacity: 0.92; }
+  100% { transform: translateY(0) scale(1);      opacity: 1; }
 }
 
 .btn-pulse {
   animation: pulse-buy 2s ease-in-out infinite;
+  will-change: transform, opacity;
+  box-shadow: 0 8px 32px rgba(34,168,69,0.4);
 }
+
 .btn-pulse:hover {
   animation: none;
   transform: translateY(-3px) scale(1.02);
@@ -98,8 +91,10 @@
 
 @keyframes floatUp {
   from { opacity: 0; transform: translateY(30px); }
-  to { opacity: 1; transform: translateY(0); }
+  to   { opacity: 1; transform: translateY(0); }
 }
+
 .animate-float-up {
   animation: floatUp 0.8s ease both;
+  will-change: transform, opacity;
 }
