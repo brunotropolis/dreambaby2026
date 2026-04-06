@@ -19,7 +19,7 @@ export default defineConfig(({ mode }) => ({
       output: {
         // Hero image com nome fixo (sem hash) para permitir <link rel="preload"> no index.html
         assetFileNames: (assetInfo) => {
-          if (assetInfo.name === "dayane-hero.jpg") return "assets/hero.jpg";
+          if (assetInfo.name === "dayane-hero.webp") return "assets/hero.webp";
           return "assets/[name]-[hash][extname]";
         },
         manualChunks: {

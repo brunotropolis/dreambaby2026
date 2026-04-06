@@ -1,5 +1,5 @@
 import SectionTag from './SectionTag';
-import dayaneImg from '@/assets/dayane-autoridade.jpg';
+import dayaneImg from '@/assets/dayane-autoridade.webp';
 
 const stats = [
   { icon: <svg width="20" height="14" viewBox="0 0 20 14" fill="none"><path d="M19.582 2.186a2.51 2.51 0 00-1.768-1.768C16.254 0 10 0 10 0S3.746 0 2.186.418A2.51 2.51 0 00.418 2.186C0 3.746 0 7 0 7s0 3.254.418 4.814a2.51 2.51 0 001.768 1.768C3.746 14 10 14 10 14s6.254 0 7.814-.418a2.51 2.51 0 001.768-1.768C20 10.254 20 7 20 7s0-3.254-.418-4.814z" fill="#FF0000"/><path d="M8 10l5.196-3L8 4v6z" fill="white"/></svg>, num: '+778k', lbl: 'inscritos no YouTube' },

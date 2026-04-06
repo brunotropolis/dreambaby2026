@@ -1,5 +1,5 @@
 import SectionTag from './SectionTag';
-import dayAlessandraImg from '@/assets/day-alessandra.jpg';
+import dayAlessandraImg from '@/assets/day-alessandra.webp';
 
 const items = [
   { ico: '📱', text: 'WhatsApp exclusivo para alunas' },
