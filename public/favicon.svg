@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="moonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5BCAD6"/>
+      <stop offset="100%" stop-color="#38B2C0"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="#0F2A33"/>
+  <path d="M44 36c-9.4 0-17-7.6-17-17 0-2.5.5-4.8 1.5-7-7.7 2.4-13.3 9.6-13.3 18.1 0 10.4 8.5 18.9 18.9 18.9 8.5 0 15.7-5.6 18.1-13.3-2.2 1-4.5 1.5-7 1.5-.4 0-.8 0-1.2-.2z" fill="url(#moonGrad)"/>
+  <ellipse cx="22" cy="46" rx="9" ry="3.5" fill="#E08AA6" opacity="0.85"/>
+  <ellipse cx="17" cy="44" rx="4" ry="2.5" fill="#E08AA6" opacity="0.85"/>
+  <ellipse cx="27" cy="44" rx="4" ry="2.5" fill="#E08AA6" opacity="0.85"/>
+</svg>
