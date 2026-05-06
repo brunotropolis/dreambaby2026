@@ -50,20 +50,6 @@ const HeroSection = () => (
         <p className="text-lg text-text-2 leading-[1.8] max-w-[480px] mb-8 lg:mb-10">
           Sem choro. Sem culpa. Sem método genérico que não respeita o seu filho. O Dream Baby já ajudou mais de 10 mil famílias a fazer essa transição em até 5 dias.
         </p>
-        <a href="#suporte" className="flex items-center justify-center gap-2.5 bg-green-btn text-primary-foreground font-body text-sm font-bold tracking-[0.5px] px-9 py-[18px] rounded-full w-full text-center transition-all duration-200 hover:bg-green-btn-hover hover:-translate-y-0.5" style={{ boxShadow: '0 8px 32px rgba(56,178,192,0.35)' }}>
-          Quero que meu bebê durma no berço essa semana ☁️
-        </a>
-        <div className="flex flex-row gap-1.5 sm:gap-2.5 mt-4 sm:mt-7 items-center mb-0">
-          {[
-            { ico: '🔒', label: 'Compra segura' },
-            { ico: '⚡', label: 'Acesso imediato' },
-            { ico: '✅', label: '7 dias de garantia' },
-          ].map((c) => (
-            <div key={c.label} className="inline-flex items-center gap-1 sm:gap-1.5 bg-card border-[1.5px] border-primary/20 text-text-2 text-[10px] sm:text-xs font-semibold px-2 sm:px-3.5 py-1 sm:py-1.5 rounded-full">
-              <span className="text-primary">{c.ico}</span> {c.label}
-            </div>
-          ))}
-        </div>
       </div>
 
       {/* Foto desktop — coluna direita */}
