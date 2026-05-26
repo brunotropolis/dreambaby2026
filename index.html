@@ -47,6 +47,313 @@
     </script>
   </head>
   <body>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <div class="db-topbar" role="region" aria-label="Topbar Dream Baby - Semana da Maternidade Leve">
+      <div class="db-inner">
+
+        <div class="db-logo-text">
+          <div class="db-logo-semana">Semana da</div>
+          <div class="db-logo-maternidade">MATERNIDADE</div>
+          <div class="db-logo-leve">Leve</div>
+        </div>
+
+        <div class="db-middle">
+          <div class="db-linha1">para seu bebê e você dormirem bem,</div>
+          <div class="db-linha2">você ganha <span class="db-destaque">20% DE DESCONTO</span></div>
+        </div>
+
+        <div class="db-right">
+          <div class="db-timer">
+            <div class="db-box"><div class="db-num" id="db-d">00</div><div class="db-lab">dias</div></div>
+            <div class="db-sep">:</div>
+            <div class="db-box"><div class="db-num" id="db-h">00</div><div class="db-lab">horas</div></div>
+            <div class="db-sep">:</div>
+            <div class="db-box"><div class="db-num" id="db-m">00</div><div class="db-lab">min</div></div>
+            <div class="db-sep">:</div>
+            <div class="db-box"><div class="db-num" id="db-s">00</div><div class="db-lab">seg</div></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <style>
+    .db-topbar {
+      --db-fundo:       #F4D9E4;
+      --db-roxo:        #6A3FA0;
+      --db-roxo-escuro: #4A2A78;
+      --db-rosa:        #D94D8C;
+      --db-rosa-claro:  #FFEAF1;
+      --db-branco:      #FFFFFF;
+      font-family: 'Quicksand', sans-serif;
+      background: var(--db-fundo);
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      padding: 24px 24px 10px;
+      padding-top: max(24px, env(safe-area-inset-top));
+      box-sizing: border-box;
+      position: relative;
+      overflow: hidden;
+    }
+    .db-topbar::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--db-roxo), transparent);
+      opacity: 0.35;
+    }
+    .db-topbar::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--db-roxo), transparent);
+      opacity: 0.35;
+    }
+
+    /* DESKTOP */
+    .db-topbar .db-inner {
+      width: min(1040px, 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 18px;
+      flex-wrap: nowrap;
+    }
+
+    /* LOGO */
+    .db-topbar .db-logo-text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      line-height: 1;
+      flex-shrink: 0;
+      padding: 2px 10px 2px 0;
+      border-right: 1px solid rgba(106, 63, 160, 0.3);
+    }
+    .db-topbar .db-logo-semana {
+      font-family: 'Quicksand', sans-serif;
+      font-size: 11px;
+      font-weight: 500;
+      color: var(--db-roxo);
+      letter-spacing: 1.5px;
+      text-transform: lowercase;
+      margin: 0 0 3px 0;
+    }
+    .db-topbar .db-logo-maternidade {
+      font-family: 'Poppins', sans-serif;
+      font-size: 20px;
+      font-weight: 800;
+      color: var(--db-roxo-escuro);
+      letter-spacing: 2px;
+      line-height: 1;
+      margin: 0;
+    }
+    .db-topbar .db-logo-leve {
+      font-family: 'Poppins', sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      color: var(--db-rosa);
+      letter-spacing: 3px;
+      line-height: 1;
+      margin: 4px 0 0 0;
+      font-style: italic;
+      text-transform: uppercase;
+    }
+
+    /* CAIXA DO TEXTO */
+    .db-topbar .db-middle {
+      text-align: left;
+      background: var(--db-roxo);
+      padding: 10px 18px;
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      box-shadow: 0 3px 10px rgba(74, 42, 120, 0.25);
+      flex-shrink: 0;
+    }
+    .db-topbar .db-linha1,
+    .db-topbar .db-linha2 {
+      font-family: 'Quicksand', sans-serif;
+      font-size: 17px;
+      font-weight: 500;
+      color: var(--db-branco);
+      line-height: 1.35;
+      white-space: nowrap;
+      margin: 0;
+    }
+    .db-topbar .db-destaque {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 800;
+      color: var(--db-rosa-claro);
+      font-size: 18px;
+      letter-spacing: 0.5px;
+    }
+
+    /* CONTADOR */
+    .db-topbar .db-right {
+      flex-shrink: 0;
+      border-left: 1px solid rgba(106, 63, 160, 0.3);
+      padding-left: 18px;
+    }
+    .db-topbar .db-timer {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .db-topbar .db-box {
+      border: 1px solid rgba(106, 63, 160, 0.35);
+      border-radius: 8px;
+      padding: 6px 10px;
+      min-width: 50px;
+      text-align: center;
+      box-sizing: border-box;
+      background: var(--db-branco);
+    }
+    .db-topbar .db-num {
+      font-family: 'Poppins', sans-serif;
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--db-roxo-escuro);
+      line-height: 1;
+      letter-spacing: 0.5px;
+    }
+    .db-topbar .db-lab {
+      font-family: 'Quicksand', sans-serif;
+      font-size: 8px;
+      font-weight: 700;
+      color: var(--db-rosa);
+      margin-top: 3px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      white-space: nowrap;
+    }
+    .db-topbar .db-sep {
+      font-family: 'Poppins', sans-serif;
+      font-size: 20px;
+      font-weight: 600;
+      color: var(--db-roxo);
+      opacity: 0.55;
+      line-height: 1;
+      margin-bottom: 12px;
+    }
+
+    /* MOBILE */
+    @media (max-width: 700px) {
+      .db-topbar {
+        padding: 28px 14px 10px;
+        padding-top: max(28px, env(safe-area-inset-top));
+      }
+
+      .db-topbar .db-inner {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+          "logo timer"
+          "text text";
+        gap: 8px 14px;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+      }
+
+      .db-topbar .db-logo-text {
+        grid-area: logo;
+        border-right: none;
+        padding: 0;
+        align-items: center;
+        justify-self: end;
+      }
+
+      .db-topbar .db-right {
+        grid-area: timer;
+        border-left: none;
+        padding-left: 0;
+        justify-self: start;
+      }
+
+      .db-topbar .db-middle {
+        grid-area: text;
+        text-align: center;
+        padding: 8px 14px;
+        width: 100%;
+        box-sizing: border-box;
+      }
+
+      .db-topbar .db-logo-semana { font-size: 9px; margin-bottom: 2px; }
+      .db-topbar .db-logo-maternidade { font-size: 16px; letter-spacing: 1.2px; }
+      .db-topbar .db-logo-leve { font-size: 11px; letter-spacing: 2px; margin-top: 3px; }
+
+      .db-topbar .db-linha1,
+      .db-topbar .db-linha2 { font-size: 13px; white-space: normal; line-height: 1.3; }
+      .db-topbar .db-destaque { font-size: 14px; }
+
+      .db-topbar .db-timer { gap: 3px; }
+      .db-topbar .db-sep { display: none; }
+      .db-topbar .db-box {
+        padding: 4px 6px;
+        min-width: 38px;
+        border-radius: 6px;
+      }
+      .db-topbar .db-num { font-size: 16px; }
+      .db-topbar .db-lab { font-size: 7px; margin-top: 2px; letter-spacing: 0.5px; }
+    }
+    </style>
+
+    <script>
+    (function(){
+      const pad = n => String(n).padStart(2,'0');
+      function ready(){
+        return document.getElementById('db-d') && document.getElementById('db-h')
+          && document.getElementById('db-m') && document.getElementById('db-s');
+      }
+      function setZeros(){
+        ['db-d','db-h','db-m','db-s'].forEach(id=>{
+          const el=document.getElementById(id); if(el) el.textContent='00';
+        });
+      }
+      function endSunday(now){
+        const day=now.getDay(); const diff=(7-day)%7;
+        const d=new Date(now); d.setDate(now.getDate()+diff); d.setHours(23,59,0,0); return d;
+      }
+      function monday0010(now){
+        const day=now.getDay(); let diff=(8-day)%7;
+        const d=new Date(now); d.setDate(now.getDate()+diff); d.setHours(0,10,0,0);
+        if(day===1){
+          const t=new Date(now); t.setHours(0,10,0,0);
+          if(now<t) return t;
+          if(diff===0) d.setDate(now.getDate()+7);
+        }
+        return d;
+      }
+      function freeze(now){ return now>=endSunday(now) && now<monday0010(now); }
+      function tick(){
+        if(!ready()) return;
+        const now=new Date();
+        if(freeze(now)){ setZeros(); return; }
+        let target=endSunday(now);
+        if(now>target){ target=new Date(target); target.setDate(target.getDate()+7); }
+        const diff=Math.max(0,target-now); const total=Math.floor(diff/1000);
+        document.getElementById('db-d').textContent=pad(Math.floor(total/86400));
+        document.getElementById('db-h').textContent=pad(Math.floor((total%86400)/3600));
+        document.getElementById('db-m').textContent=pad(Math.floor((total%3600)/60));
+        document.getElementById('db-s').textContent=pad(total%60);
+      }
+      let started=false;
+      function boot(){ if(started||!ready()) return; started=true; tick(); setInterval(tick,1000); }
+      boot(); setTimeout(boot,200); setTimeout(boot,800); setTimeout(boot,2000);
+      if('MutationObserver' in window){
+        new MutationObserver(()=>boot()).observe(document.documentElement,{childList:true,subtree:true});
+      }
+    })();
+    </script>
+
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
